@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
     <link href="index.css" rel="stylesheet">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js" defer></script>
@@ -11,10 +12,21 @@
 
 </head>
 <body>
-    <header>
-        <h1>Början på hemsidan...</h1>
-        <h3>Mattias ist ein kleine kinder</h3>
-        <nav class='menu'>
+    <header id="header">
+        <div class="grid-container">
+            <div class="item1">
+                <img id="logo"src="resources/logo.png" alt="logga">
+            </div>
+
+            <div class="item2">
+                <h1 id="title">COM|VUE|TER</h1>
+            </div>
+
+            <div class="item3">
+                <input id="searchBar" type="textbox" placeholder="Search...">
+            </div>
+            <div class="item4">
+            <nav class='menu'>
             <ul>
                 <li>
                     <a href="">Våra produkter</a>
@@ -30,12 +42,20 @@
                 </li>
             </ul>
         </nav>
+        </div>
+        <div class="item5">
+            <h1></h1>
+        </div>
+    </div>
     </header>
     <main>
+        <p>
+            hej1
 
+        </p>
     </main>
     <footer>
-
+        
     </footer>
 </body>
 </html>

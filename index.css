@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300&family=Quicksand:wght@300;400&display=swap');
+
+*{
+    margin:0;
+}
+
 body{
     margin:0;
     padding:0;
@@ -5,7 +11,89 @@ body{
 }
 
 header {
+    position:fixed;
+    transition:top 0.5s;
     width:100%;
-    height:80px;
-    background-color:brown;
+    height:150px;
+    background-color:rgb(98, 98, 98);
 }
+
+footer{
+    position:relative;
+    width:100%;
+    height: 200px;
+    bottom:0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:2px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.item1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+#logo{
+    width:15%;
+    float:left;
+}
+
+.item2, .item3, .item4{
+    grid-column-start:2;
+    grid-column-end:6;
+}
+
+.item5 {
+    grid-row-start:1;
+    grid-row-end:4;
+    grid-column-end:7;
+}
+
+
+
+/*
+.menu ul{
+    position:absolute;
+    text-align:center;
+    bottom:0;
+    width:100%;
+}
+
+.menu ul li{
+    display:inline;
+    margin-right: 3em;
+
+}
+
+.menu ul li a{
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Quicksand', sans-serif;
+    font-weight:5px;
+    color:white;
+}
+
+.menu ul li a:hover{
+    background-color:gray;
+}
+
+main p{
+    text-align:center;
+    width:25%;
+}
+*/

@@ -68,11 +68,7 @@ footer {
    cursor: pointer;
    opacity: 0.5;
 }
-/*.computer-logo:hover {
-   cursor: pointer;
-   opacity: 0.8;
-}
-*/
+
 .left-section:hover {
    cursor: pointer;
    opacity: 0.8;
@@ -125,7 +121,7 @@ footer {
 }
 
 .search-icon {
-   width: 40px;
+   width: 25px;
    right: 10px;
    position: absolute;
    align-self: center;

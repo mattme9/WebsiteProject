@@ -64,6 +64,10 @@ footer {
    cursor: pointer;
    color: grey;
 }
+.shopping-cart-icon-container:hover {
+   cursor: pointer;
+   color: grey;
+}
 
 .left-section {
    flex: 1;

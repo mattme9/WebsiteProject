@@ -1,122 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300&family=Quicksand:wght@300;400&display=swap');
-
-*{
-    margin:0;
-}
-
-body{
-    margin:0;
-    padding:0;
-    background-color:darkgrey;
-}
-
-header {
-    position:fixed;
-    transition:top 0.5s;
-    width:100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(30, 39, 103);
+    color: rgb(237, 240, 241);
+ }
+ 
+ 
+ body {
+    padding-bottom: 5000px;
+    font-family: 'Montserrat', sans-serif;
+ }
+ 
+ 
+ .header {
     height: 200px;
-    background-color:rgb(98, 98, 98);
-}
-
-footer{
-    position:relative;
-    width:100%;
-    height: 200px;
-    bottom:0;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 75px 75px 50px;
-    width:100%;
-}
-
-.grid-container > div {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-}
-
-.item1 {
-    grid-column-start:1;
-    grid-column-end:2;
-    grid-row-start:1;
-    grid-row-end:4;
-}
-
-#logo{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-}
-
-#title{
-    object-fit:contain;
-    font-size:1.5em;
-    font-family:'Quicksand', sans-serif;
-    position:relative;
-
-}
-
-.item2, .item3, .item4{
-    grid-column-start:2;
-    grid-column-end:3;
-}
-
-.menu{
-    position:relative;
-}
-
-.menu ul li{
-    display:inline;
-    margin-right:1.5em;
-}
-
-.menu ul li a{
-    font-size:large;
-    font-family:'Quicksand', sans-serif;
-    text-transform: uppercase;
-    color:white;
-}
-
-.item5 {
-    grid-column-start:3;
-    grid-column-end:4;
-    grid-row-start:1;
-    grid-row-end:4;
-}
-
-
-
-/*
-.menu ul{
-    position:absolute;
-    text-align:center;
-    bottom:0;
-    width:100%;
-}
-
-.menu ul li{
-    display:inline;
-    margin-right: 3em;
-
-}
-
-.menu ul li a{
-    text-decoration:none;
-    text-transform:uppercase;
-    font-family:'Quicksand', sans-serif;
-    font-weight:5px;
-    color:white;
-}
-
-.menu ul li a:hover{
-    background-color:gray;
-}
-
-main p{
-    text-align:center;
-    width:25%;
-}
-*/
+ 
+ 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+ 
+ 
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+ 
+ 
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+ }
+ 
+ 
+ .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ 
+ .row-top {
+    display: flex;
+    height: 120px;
+ }
+ 
+ 
+ .row-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 20px 0 20px;
+ }
+ 
+ 
+ .top-menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+ }
+ 
+ 
+ .top-menu-link:hover {
+    cursor: pointer;
+    color: grey;
+ }
+ 
+ 
+ .left-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    padding-left: 5px;
+ }
+ 
+ 
+ .computer-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+ }
+ 
+ 
+ .middle-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+ }
+ 
+ 
+ .search-bar-container {
+    display: flex;
+    position: relative;
+    flex: 1;
+ }
+ 
+ 
+ .search-bar {
+    flex: 1;
+    height: 45px;
+    font-size: 16px;
+    padding-left: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ }
+ 
+ 
+ .search-bar::placeholder {
+    font-size: 16px;
+ }
+ 
+ 
+ .search-icon {
+    width: 40px;
+    right: 10px;
+    position: absolute;
+    align-self: center;
+    padding-right: 5px
+ }
+ 
+ 
+ .right-section {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 182px;
+    flex: 1;
+ }
+ 
+ 
+ .shopping-cart-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+ }
+ 
+ 
+ .shopping-cart-icon {
+    width: 40px;
+    padding-right: 7px;
+ }
+ 

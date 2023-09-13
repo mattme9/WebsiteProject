@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/buildpc.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
     <script defer src="/script.js"></script>
 </head>
@@ -36,10 +36,26 @@
         </div>
     </header>
     <main>
-        <div>
-            <div>
+        <div class="pcbuilder">
+            <section class="pcbuildersection">
+                <!-- left-flex är sidmenypanelen. right-flex är komponenten som täcker större delen av sidan.-->
+                <div class="left-flex">
+                    <div class="summaryBox">
+                        <h2 class="summaryTitle">Summa datorbygge:</h2>
+                        <p class="summaryTotal">0kr</p>
+                        <div class="summaryButtonContainer">
+                            <button class="summaryButton">Rensa bygget</button>
+                            <button class="summaryButton">Slutför</button>
+                        </div>
+                    </div>
+                    <!-- Här har vi knapparna för den vänstra flexboxen-->
+                    <button class="left-flex-button">Knapp1</button>
+                </div>
+            
+                <div class="right-flex">
 
-            </div>
+                </div>
+            </section>
         </div>
     </main>
     <footer>

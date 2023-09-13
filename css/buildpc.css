@@ -1,11 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    color: rgb(237, 240, 241);
+    color: #FAF0E6;
  }
  
  body {
     font-family: "Montserrat", sans-serif;
+ }
+
+ a {
+    text-decoration: none;
  }
  
  .header {
@@ -146,6 +150,64 @@
  .shopping-cart-icon {
     width: 40px;
     padding-right: 7px;
+ }
+
+ .pcbuildersection {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 140px;
+ }
+
+ .left-flex {
+    margin-left: 200px;
+    margin-right: 30px;
+    width: 300px;
+ }
+
+ .summaryBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 10px;
+    background-color: #808080;
+ }
+
+ .summaryTitle, .summaryTotal {
+    color: #FFFFFF;
+ }
+
+ .summaryTitle {
+    font-size: 15px;
+ }
+
+ .summaryTotal {
+    font-size: 30px;
+    font-weight: bold;
+ }
+
+ .summaryButtonContainer {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .summaryButton {
+    color: #000000;
+    background-color: #abacac;
+    height: 30px;
+    width: 50%;
+    margin: 5px;
+ }
+
+ .left-flex-button {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 15px 5px;
+ }
+
+ .right-flex {
+    margin-right: 200px;
+    flex-grow: 1;
  }
  
  

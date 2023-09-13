@@ -8,6 +8,10 @@ body {
    font-family: "Montserrat", sans-serif;
 }
 
+a {
+   text-decoration: none;
+}
+
 .header {
    height: 130px;
 
@@ -147,6 +151,7 @@ footer {
    width: 40px;
    padding-right: 7px;
 }
+
 
 
 

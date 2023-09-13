@@ -1,11 +1,15 @@
+console.log("lol");
+
+/*
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("header").style.top = "0";
+    document.querySelector("header").style.top = "1s";
     console.log('lmao');
   } else {
-    document.getElementById("header").style.top = "-150px";
+    document.querySelector("header").style.top = "-200px";
   }
   prevScrollpos = currentScrollPos;
 }
+*/

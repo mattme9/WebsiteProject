@@ -22,7 +22,7 @@
     flex-direction: column;
  
  
-    position: fixed;
+   position:absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -33,14 +33,6 @@
     border-bottom-style: solid;
     border-bottom-color: rgb(228, 228, 228);
  }
- 
- 
- .banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
- 
  
  .row-top {
     display: flex;

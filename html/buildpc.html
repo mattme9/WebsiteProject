@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/buildpc.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+        rel="stylesheet">
     <script defer src="/script.js"></script>
 </head>
+
 <body>
     <header class="header">
         <div class="row-top">
@@ -17,8 +20,8 @@
             </div>
             <div class="middle-section">
                 <div class="search-bar-container">
-                <input class="search-bar" type="text" placeholder="Sök här">
-                <img class="search-icon" src="/resources/magnifying-glass-solid.svg">
+                    <input class="search-bar" type="text" placeholder="Sök här">
+                    <img class="search-icon" src="/resources/magnifying-glass-solid.svg">
                 </div>
             </div>
             <div class="right-section">
@@ -38,7 +41,7 @@
     <main>
         <div class="pcbuilder">
             <section class="pcbuildersection">
-                <!-- left-flex är sidmenypanelen. right-flex är komponenten som täcker större delen av sidan.-->
+                <!-- Här har vi koden för den vänstra flex boxen som håller i kategorierna och sammanfattningsboxen.-->
                 <div class="left-flex">
                     <div class="summaryBox">
                         <h2 class="summaryTitle">Summa datorbygge:</h2>
@@ -49,21 +52,58 @@
                         </div>
                     </div>
                     <!-- Här har vi knapparna för den vänstra flexboxen-->
-                    <button class="left-flex-button">Startsida</button>
-                    <button class="left-flex-button">Datorchassi</button>
-                    <button class="left-flex-button">Processor / CPU</button>
-                    <button class="left-flex-button">Grafikkort / GPU</button>
-                    <button class="left-flex-button">Moderkort</button>
-                    <button class="left-flex-button">Internminne / RAM</button>
-                    <button class="left-flex-button">Hårddisk / SSD & HDD</button>
-                    <button class="left-flex-button">Fläktar</button>
-                    <button class="left-flex-button">Kylning</button>
-                    <button class="left-flex-button">Nätdel / PSU</button>
-                    <button class="left-flex-button">Operativsystem</button>
-                    <button class="left-flex-button">Monteringstillägg</button>
+                    <button class="left-flex-button">
+                        <img src="/resources/home.png" alt="Startsida-ikon">
+                        Startsida
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/chassi.png" alt="Chassi-ikon">
+                        Datorchassi
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/processor.png" alt="Processor-ikon">
+                        Processor
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/gpu.png" alt="GPU-ikon">
+                        Grafikkort / GPU
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/motherboard.png" alt="Motherboard-ikon">
+                        Moderkort
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/ram.png" alt="RAM-ikon">
+                        Internminne / RAM
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/harddrive.png" alt="SSD_HDD-ikon">
+                        Hårddisk / SSD & HDD
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/fans.png" alt="fans-ikon">
+                        Fläktar
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/cooling.png" alt="Cooling-ikon">
+                        Kylning
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/psu.png" alt="PSU-ikon">
+                        Nätdel / PSU
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/OS.png" alt="OS-ikon">
+                        Operativsystem
+                    </button>
+                    <button class="left-flex-button">
+                        <img src="/resources/provide_build.png" alt="mount-ikon">
+                        Monteringstillägg
+                    </button>
                 </div>
-            
+
                 <div class="right-flex">
+                    <!-- Här har vi koden för högra flex boxen som håller i komponenterna för tillval samt här ska även en sammanställning visas när bygget väljs att slutföras.-->
                     <div class="rightFlexBox">
 
                     </div>
@@ -75,11 +115,11 @@
     <footer>
         <div>
             <div>
-            <p>Hola</p>
+                <p>Hola</p>
             </div>
             <p>como</p>
             <div>
-            <p>balle</p>
+                <p>balle</p>
             </div>
             <p>estas</p>
             <div>
@@ -87,9 +127,10 @@
             </div>
 
         </div>
-        
+
 
     </footer>
 
 </body>
-</html> 
+
+</html>

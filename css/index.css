@@ -62,11 +62,11 @@ footer {
 
 .top-menu-link:hover {
    cursor: pointer;
-   color: grey;
+   opacity: 0.5;
 }
 .shopping-cart-icon-container:hover {
    cursor: pointer;
-   color: grey;
+   opacity: 0.5;
 }
 
 .left-section {
@@ -142,3 +142,6 @@ footer {
    width: 40px;
    padding-right: 7px;
 }
+
+
+

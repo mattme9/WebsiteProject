@@ -68,6 +68,15 @@ footer {
    cursor: pointer;
    opacity: 0.5;
 }
+/*.computer-logo:hover {
+   cursor: pointer;
+   opacity: 0.8;
+}
+*/
+.left-section:hover {
+   cursor: pointer;
+   opacity: 0.8;
+}
 
 .left-section {
    flex: 1;

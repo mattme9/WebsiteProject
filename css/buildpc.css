@@ -317,4 +317,7 @@
    flex-shrink: 0;
 }
  
+.innerFlexBox iframe {
+   padding-top: 20px;
+}
  

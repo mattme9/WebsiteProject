@@ -298,14 +298,14 @@
     min-width: 100%;
  }
 
- .innerFlexBox {
+ .innerFlexBox, .innerFlexBoxStart {
    margin: 20px 60px;
    height:100%;
    max-width: 100%;
    word-wrap: break-word;
  }
  
- .innerFlexBox h2 {
+ .innerFlexBoxStart h2 {
    text-align: center;
    text-transform: uppercase;
    font-weight: bolder;
@@ -317,7 +317,8 @@
    flex-shrink: 0;
 }
  
-.innerFlexBox iframe {
+.innerFlexBoxStart iframe {
    padding-top: 20px;
+   padding-bottom: 20px;
 }
  

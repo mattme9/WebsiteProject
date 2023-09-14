@@ -38,9 +38,8 @@
  footer {
    position: relative;
    margin-bottom: 0;
-   margin-top: 100rem;
    width: 100%;
-   background-color: white;
+   background-color: #242526;
 }
 
 .footer-container {
@@ -309,9 +308,8 @@
  .innerFlexBox h2 {
    text-align: center;
    text-transform: uppercase;
-   text-decoration: underline;
    font-weight: bolder;
-   padding-bottom: 20px;
+   padding-bottom: 25px;
  }
 
 

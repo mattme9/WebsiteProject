@@ -296,8 +296,27 @@
     padding: 10px;
     background-color: #303233;
     margin-bottom: 12px;
+    min-width: 100%;
+ }
+
+ .innerFlexBox {
+   margin: 20px 60px;
+   height:100%;
+   max-width: 100%;
+   word-wrap: break-word;
  }
  
- 
+ .innerFlexBox h2 {
+   text-align: center;
+   text-transform: uppercase;
+   text-decoration: underline;
+   font-weight: bolder;
+   padding-bottom: 20px;
+ }
+
+
+.left-flex, .rightFlexBox {
+   flex-shrink: 0;
+}
  
  

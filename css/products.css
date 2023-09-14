@@ -153,11 +153,11 @@
  }
 
  .grid-container{
-   padding:130px;
+   padding:150px;
    display:grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    grid-template-rows:300px 300px 300px;
-   gap:5px;
+   gap:15px;
    justify-content: center;
 }
 
@@ -166,14 +166,40 @@
  padding: 20px 0;
  font-size: 30px;
  background-color: rgb(43, 113, 226);
+ border-radius:20px;
+ border-style:groove;
 }
 
-#btnPos{
-   float:left;
-   padding:40px;
+.item1 h2{
+   font-size: 1em;
+}
+
+#txtPrice{
+   margin-top:2em;
+   color:black;
+}
+
+#txtPrice span{
+   font-size: 2em;
+}
+
+.item1 p{
+   font-size: 0.5em;
+}
+
+.item1 button{
+   padding:8px;
+   color:black;
+   background-color:white;
+   border-radius:10px;
+   border-style:double;
+}
+
+.item1 button:hover{
+   background-color:burlywood;
 }
 
 .item1 img{
    width:150px;
-   height:150px;
+   height:100px;
 }

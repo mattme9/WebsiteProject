@@ -151,3 +151,29 @@
     width: 40px;
     padding-right: 7px;
  }
+
+ .grid-container{
+   padding:130px;
+   display:grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-template-rows:300px 300px 300px;
+   gap:5px;
+   justify-content: center;
+}
+
+.grid-container > div{
+ text-align: center;
+ padding: 20px 0;
+ font-size: 30px;
+ background-color: rgb(43, 113, 226);
+}
+
+#btnPos{
+   float:left;
+   padding:40px;
+}
+
+.item1 img{
+   width:150px;
+   height:150px;
+}

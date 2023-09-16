@@ -53,14 +53,29 @@ const app = Vue.createApp({
                     image: '/resources/products/item7.jpg',
                     price: '4699'
                 },
-
-
-            ]
+                {
+                    id:8,
+                    name: 'Macintosh',
+                    description: 'Veteran',
+                    image: 'bild',
+                    price: '7999'
+                }
+            ],
+            shoppingCart: [],
+            cartCount: 0,
+            cartSum: 0
         }
     },
 
     methods:{
+        addToCart(product){
+            this.shoppingCart.push(product);
+            this.cartCount = this.shoppingCart.length;
+        },
 
+        sumOfCart(product){
+            cartSum += product.price;
+        }
     }
 });
 

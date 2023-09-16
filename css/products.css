@@ -170,7 +170,7 @@
  border-style:groove;
 }
 
-.item1 h2{
+.item h2{
    font-size: 1em;
 }
 
@@ -183,11 +183,11 @@
    font-size: 2em;
 }
 
-.item1 p{
+.item p{
    font-size: 0.5em;
 }
 
-.item1 button{
+.item button{
    padding:8px;
    color:black;
    background-color:white;
@@ -195,11 +195,11 @@
    border-style:double;
 }
 
-.item1 button:hover{
+.item button:hover{
    background-color:burlywood;
 }
 
-.item1 img{
+.item img{
    width:150px;
    height:100px;
 }

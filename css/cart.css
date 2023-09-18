@@ -59,6 +59,11 @@ main > div {
     margin-left: 7px;
 }
 
+.delete-button {
+    color: black;
+    margin-left: 5px;
+}
+
 .product-image {
     width: 60px;
     margin-left: auto;
@@ -71,7 +76,7 @@ main > div {
 
 .payment-summary-row {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
     font-size: 15px;
     margin-bottom: 9px;
 }

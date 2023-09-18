@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Shopping Cart</title>
+      <link rel="stylesheet" href="/css/index.css"/>
+      <link rel="stylesheet" href="/css/cart.css">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+         rel="stylesheet"/>
+
+        <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script defer src="cart.js"></script>
+   </head>
+   <body>
+      <header class="header">
+         <div class="row-top">
+            <div class="left-section">
+               <a href="/html/index.html"></a>
+               <img class="computer-logo" src="/resources/logo.png" />
+               COM|VUE|TER
+            </div>
+            <div class="middle-section">
+               <div class="search-bar-container">
+                  <input class="search-bar" type="text" placeholder="Sök här" />
+                  <img
+                     class="search-icon"
+                     src="/resources/magnifying-glass-solid.svg"
+                  />
+               </div>
+            </div>
+            <div class="right-section">
+               <div class="shopping-cart-icon-container">
+                  <img
+                     class="shopping-cart-icon"
+                     src="/resources/shoppingcart.svg"/>
+                  <a href=""> Kundvagn</a>
+               </div>
+            </div>
+         </div>
+         <div class="row-bottom">
+            <div class="top-menu-link">
+               <a href="/html/products.html">Våra produkter</a>
+            </div>
+            <div class="top-menu-link">
+               <a href="/html/buildpc.html">Bygg din egen dator</a>
+            </div>
+            <div class="top-menu-link">
+               <a href="/html/aboutus.html">Om oss</a>
+            </div>
+            <div class="top-menu-link">
+               <a href="/html/policy.html">Policy</a>
+            </div>
+         </div>
+      </header>
+
+
+
+    <main>
+        <div id="shoppingCart"> 
+            <div class="page-title">Din varukorg</div>
+            <div class="checkout-grid">
+                <div class="cart-summary">
+                    <div class="cart-item-container" v-for="(item, index) in computer" :key="item.id">
+                        <div class="cart-item-details-grid">
+                            <div class="cart-item-details">
+                                <div class="product-name">{{ index + 1 }} - {{ item.name }}</div>
+                                <div class="product-price">{{ item.price }}</div>
+                                <div class="quantity-container">
+                                    Antal: 
+                                    <input class="quantity-input" type="number">
+                                </div>
+                            </div>
+                            <div class="product-image-container">
+                                <img class="product-image" src="/resources/macbook.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-summary">
+                    <div class="payment-info">
+                        <div class="payment-summary-title">Ordersammanfattning</div>
+                        <div class="payment-summary-row">
+                            <div>Artiklar({{ totalCount() }}):</div>
+                            <div class="payment-summary-amount">$$</div>
+                        </div>
+                        <div class="payment-summary-row">
+                            <div>Moms(25%):</div>
+                            <div class="payment-summary-amount">$$</div>
+                        </div>
+                        <div class="payment-summary-row">
+                            <div>Ordertotal:</div>
+                            <div class="payment-summary-amount">$$</div>
+                        </div>
+                    </div>
+                    <div class="payment-button-container">
+                        <button class="payment-button">Lägg beställning</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+      <footer>
+         <div class="footer-container">
+            <div class="left-footer">
+               <h2>Policy</h2>
+            </div>
+
+            <div class="center-footer">
+               
+               <h2>Om oss</h2>
+               <p>
+                  ComVueTer är ditt go-to företag för tekniklösningar. Vi
+                  erbjuder toppmoderna datorkomponenter och skräddarsydda
+                  datorer, från gaming till kontor. <br />
+                  Vårt expertteam levererar bästa möjliga kundupplevelse och de
+                  senaste produkterna. Vi skapar inte bara datorer, vi
+                  förverkligar drömmar. <br />
+                  <br />
+                  <a href="/html/aboutus.html"><span class="center-footer-link">Klicka här</span></a> för mer info om
+                  oss
+               </p>
+            </div>
+
+            <div class="right-footer">
+               <h2>Kontakt</h2>
+               <div class="socials">
+                  <img src="\resources\facebook.png" alt="facebook" />
+                  <img src="\resources\instagram.png" alt="instagram" />
+                  <img src="\resources\discord.png" alt="discord" />
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>

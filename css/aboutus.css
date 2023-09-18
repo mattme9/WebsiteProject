@@ -1,17 +1,36 @@
 body {
-   font-family: "Montserrat", sans-serif;
-
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
-   display: flex;
-   justify-content: space-between;
-   padding-top: 130px;
-   background-color: #242526;
-}
-
-.companyInfo {
-    border-style: solid;
-    border: 1px;
-    border-color: white;
-}
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 130px;
+    background-color: #242526;
+ }
+ 
+ .companyInfo {
+     border: 1px solid white;
+     margin: 0 auto; /* Centrera horisontellt */
+     text-align: center; /* Centrera texten */
+     max-width: 70%; /* Max bredd 70% av förälderelementet */
+     margin-top: 5rem;
+     padding: 2rem;
+     margin-bottom: 5rem;
+     width: 100%; /* Fyll tillgängligt utrymme */
+ }
+ 
+ .companyInfo h1 {
+     padding: 2rem;
+ }
+ 
+ .companyInfo p {
+     padding: 2rem;
+ }
+ 
+ .ourEmployees {
+     padding: 0.5rem;
+     color: rgb(237, 240, 241);
+     background-color: slategray;
+ }
+ 

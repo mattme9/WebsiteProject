@@ -6,6 +6,7 @@
  
  body {
     font-family: "Montserrat", sans-serif;
+    background-color: #242526;
  }
 
  a {
@@ -25,24 +26,71 @@
     top: 0;
  
     background-color: rgb(30, 39, 103);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(228, 228, 228);
  }
  
  main {
     width: 100%;
     height: 1000px;
     background-color: #242526;
+    flex: 1;
  }
  
  footer {
-    bottom: 0px;
-    position: relative;
-    width: 100%;
-    height: 260px;
-    background-color: rgb(30, 39, 103);
- }
+   position: relative;
+   margin-bottom: 0;
+   width: 100%;
+   background-color: #242526;
+}
+
+.footer-container {
+   display: grid;
+   /* grid-template-columns: repeat (auto-fit, minmax(100px, 1fr)); */
+   grid-template-columns: 1fr 1fr 1fr;
+
+   height: 200px;
+   gap: 5px;
+   
+}
+
+.footer-container > div {
+   text-align: center;
+   background-color: rgb(30, 39, 103);
+
+}
+
+.footer-container p{
+   text-align:left;
+   padding-left:1rem;
+   padding-top:0.5rem;
+
+}
+
+
+
+.center-footer-link{
+   text-decoration: underline;
+}
+
+.center-footer-link:hover{
+   color: slategrey;
+}
+
+.socials {
+   margin-top:120px;
+   margin-bottom:0;
+}
+
+.socials img{
+   
+   height:35px;
+   width:auto;
+   
+}
+
+.socials img:hover {
+   cursor:pointer;
+   opacity:0.8;
+}
  
  .row-top {
     display: flex;
@@ -153,102 +201,144 @@
  }
 
  .pcbuildersection {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 150px;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 150px;
+}
+
+.left-flex {
+   margin-left: 260px;
+   margin-right: 12px;
+   width: 300px;
+}
+
+.summaryBox {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 120px;
+   padding: 10px;
+   background-color: #303233;
+   margin-bottom: 12px;
+}
+
+.summaryTitle, .summaryTotal {
+   color: #e1e1e1;
+}
+
+.summaryTitle, .summaryTotal {
+   text-align: center;
+}
+
+.summaryTitle {
+   font-size: 15px;
+}
+
+.summaryTotal {
+   font-size: 30px;
+   font-weight: bold;
+   margin-top: 7px;
+}
+
+.summaryButtonContainer {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+
+.summaryButton {
+   color: #000000;
+   background-color: #abacac;
+   height: 35px;
+   width: 50%;
+   margin: 5px;
+}
+
+.left-flex-button {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   box-sizing: border-box;
+   width: 100%;
+   height: 45px;
+   margin-bottom: 12px;
+   padding-left: 10px;
+   background-color: #303233;
+   color: #e1e1e1;
+   font-weight:600;
+   border: 0;
+
+}
+
+.left-flex-button img {
+   max-height: calc(100% - 10px);
+   max-width: 35px;
+   min-width: 35px;
+   padding-right: 15px;
+}
+
+.left-flex-button:hover {
+   cursor: pointer;
+   opacity: 0.5;
+}
+
+.right-flex {
+   margin-right: 260px;
+   flex-grow: 1;
+}
+
+.rightFlexBox {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: calc(100% - 12px);
+   padding: 10px;
+   background-color: #303233;
+   margin-bottom: 12px;
+   min-width: 100%;
+}
+
+.innerFlexBox, .innerFlexBoxStart, .innerFlexBoxChassi, .innerFlexBoxProcessor, .innerFlexBoxGPU, .innerFlexBoxMotherboard, .innerFlexBoxRAM, .innerFlexBoxHarddrive, .innerFlexBoxFans, .innerFlexBoxCooling, .innerFlexBoxPSU, .innerFlexBoxOS, .innerFlexBoxProvideBuild {
+  margin: 20px 60px;
+  height:100%;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.innerFlexBoxStart, .innerFlexBoxChassi, .innerFlexBoxProcessor, .innerFlexBoxGPU, .innerFlexBoxMotherboard, .innerFlexBoxRAM, .innerFlexBoxHarddrive, .innerFlexBoxFans, .innerFlexBoxCooling, .innerFlexBoxPSU, .innerFlexBoxOS, .innerFlexBoxProvideBuild h2 {
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: bolder;
+   padding-bottom: 25px;
  }
 
- .left-flex {
-    margin-left: 260px;
-    margin-right: 12px;
-    width: 300px;
- }
+.innerFlexBoxStart p {
+   text-align: left;
+   text-transform: none;
+   font-weight: normal;
+   padding-bottom: 7px;
+   padding-top: 25px;
+}
 
- .summaryBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 120px;
-    padding: 10px;
-    background-color: #303233;
-    margin-bottom: 12px;
- }
+.left-flex, .rightFlexBox {
+  flex-shrink: 0;
+}
 
- .summaryTitle, .summaryTotal {
-    color: #e1e1e1;
- }
-
- .summaryTitle, .summaryTotal {
-    text-align: center;
- }
-
- .summaryTitle {
-    font-size: 15px;
- }
-
- .summaryTotal {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 7px;
- }
-
- .summaryButtonContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
- }
-
- .summaryButton {
-    color: #000000;
-    background-color: #abacac;
-    height: 35px;
-    width: 50%;
-    margin: 5px;
- }
-
- .left-flex-button {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    width: 100%;
-    height: 45px;
-    margin-bottom: 12px;
-    padding-left: 10px;
-    background-color: #303233;
-    color: #e1e1e1;
-    font-weight:600;
-    border: 0;
-
- }
-
- .left-flex-button img {
-    max-height: calc(100% - 10px);
-    max-width: 35px;
-    min-width: 35px;
-    padding-right: 15px;
- }
-
- .left-flex-button:hover {
-    cursor: pointer;
-    opacity: 0.5;
- }
-
- .right-flex {
-    margin-right: 260px;
-    flex-grow: 1;
- }
-
- .rightFlexBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: calc(100% - 12px);
-    padding: 10px;
-    background-color: #303233;
-    margin-bottom: 12px;
- }
+.innerFlexBoxStart iframe {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
  
- 
- 
- 
+.innerFlexBoxChassi,
+.innerFlexBoxProcessor,
+.innerFlexBoxGPU,
+.innerFlexBoxMotherboard,
+.innerFlexBoxRAM,
+.innerFlexBoxHarddrive,
+.innerFlexBoxFans,
+.innerFlexBoxCooling,
+.innerFlexBoxPSU,
+.innerFlexBoxOS,
+.innerFlexBoxProvideBuild {
+  display: none;
+}

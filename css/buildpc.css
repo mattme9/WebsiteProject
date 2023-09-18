@@ -1,209 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-    color: #FAF0E6;
- }
- 
- body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #242526;
- }
 
- a {
-    text-decoration: none;
- }
- 
- .header {
-    height: 130px;
- 
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
- 
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
- 
-    background-color: rgb(30, 39, 103);
- }
- 
  main {
     width: 100%;
-    height: 1000px;
     background-color: #242526;
     flex: 1;
  }
  
- footer {
-   position: relative;
-   margin-bottom: 0;
-   width: 100%;
-   background-color: #242526;
-}
 
-.footer-container {
-   display: grid;
-   /* grid-template-columns: repeat (auto-fit, minmax(100px, 1fr)); */
-   grid-template-columns: 1fr 1fr 1fr;
-
-   height: 200px;
-   gap: 5px;
-   
-}
-
-.footer-container > div {
-   text-align: center;
-   background-color: rgb(30, 39, 103);
-
-}
-
-.footer-container p{
-   text-align:left;
-   padding-left:1rem;
-   padding-top:0.5rem;
-
-}
-
-
-
-.center-footer-link{
-   text-decoration: underline;
-}
-
-.center-footer-link:hover{
-   color: slategrey;
-}
-
-.socials {
-   margin-top:120px;
-   margin-bottom:0;
-}
-
-.socials img{
-   
-   height:35px;
-   width:auto;
-   
-}
-
-.socials img:hover {
-   cursor:pointer;
-   opacity:0.8;
-}
- 
- .row-top {
-    display: flex;
-    height: 90px;
- }
- 
- .row-bottom {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 100px;
-    padding: 15px 20px;
- }
- 
- .top-menu-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
- }
- 
- .top-menu-link:hover {
-    cursor: pointer;
-    opacity: 0.5;
- }
- .shopping-cart-icon-container:hover {
-    cursor: pointer;
-    opacity: 0.5;
- }
- 
- .left-section:hover {
-    cursor: pointer;
-    opacity: 0.8;
- }
- 
- .left-section {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    padding-right: 40px;
-    padding-left: 5px;
-    margin-top: 10px;
- }
- 
- .computer-logo {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-top: 10px;
- }
- 
- .middle-section {
-    display: flex;
-    align-items: center;
-    flex: 1;
- }
- 
- .search-bar-container {
-    display: flex;
-    position: relative;
-    flex: 1;
- }
- 
- .search-bar {
-    flex: 1;
-    height: 45px;
-    font-size: 16px;
-    padding-left: 20px;
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 25px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-       rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    color: black;
- }
- 
- .search-bar::placeholder {
-    font-size: 16px;
- }
- 
- .search-icon {
-    width: 25px;
-    right: 10px;
-    position: absolute;
-    align-self: center;
-    padding-right: 5px;
- }
- 
- .right-section {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 182px;
-    flex: 1;
- }
- 
- .shopping-cart-icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
- }
- 
- .shopping-cart-icon {
-    width: 40px;
-    padding-right: 7px;
- }
 
  .pcbuildersection {
    display: flex;
    justify-content: space-between;
-   padding-top: 150px;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
 }
 
 .left-flex {
@@ -341,4 +149,33 @@
 .innerFlexBoxOS,
 .innerFlexBoxProvideBuild {
   display: none;
+}
+
+.monteringsButtonOption {
+   display: inline-flex; /* Ändra till inline-flex */
+   align-items: center;
+   justify-content: center; /* Centrerar texten i knappen */
+   box-sizing: border-box;
+   width: 40%;
+   height: 3rem;
+   margin-bottom: 12rem;
+   margin-top: 11rem;
+   margin-right: 1rem;
+   margin-left: 1rem;
+   background-color: #242526;
+   color: #e1e1e1;
+   font-weight:600;
+   border: 0;
+}
+
+.monteringsButtonOption:hover {
+   cursor:pointer;
+   opacity: 0.5;
+}
+
+.innerFlexBoxProvideBuild {
+   display: flex;
+   flex-direction: column; /* Lägger till element i en kolumn */
+   align-items: center; /* Centrerar elementen horisontellt */
+   justify-content: space-between; /* Ger lika mycket utrymme mellan elementen */
 }

@@ -69,10 +69,11 @@
                                 <div class="quantity-container">
                                     Antal: 
                                     <input class="quantity-input" type="number">
+                                    <button class="delete-button" @click="removeFromCart(index)">Ta bort</button>
                                 </div>
                             </div>
                             <div class="product-image-container">
-                                <img class="product-image" src="/resources/macbook.jpg">
+                                <img class="product-image" src="">
                             </div>
                         </div>
                     </div>
@@ -82,15 +83,23 @@
                         <div class="payment-summary-title">Ordersammanfattning</div>
                         <div class="payment-summary-row">
                             <div>Artiklar({{ totalCount() }}):</div>
-                            <div class="payment-summary-amount">$$</div>
+                            <div class="payment-summary-amount">{{ totalPrice().toFixed(2) }}</div>
+                            <div>kr</div>
                         </div>
                         <div class="payment-summary-row">
-                            <div>Moms(25%):</div>
-                            <div class="payment-summary-amount">$$</div>
+                            <div>Frakt:</div>
+                            <div class="payment-summary-amount">{{ shippingCost() }}</div>
+                            <div>kr</div>
+                        </div>
+                        <div class="payment-summary-row">
+                            <div>Varav moms:</div>
+                            <div class="payment-summary-amount">{{ ((totalPrice() - totalPrice() / 1.12) + (shippingCost() - shippingCost() / 1.25)).toFixed(2) }}</div>
+                            <div>kr</div>
                         </div>
                         <div class="payment-summary-row">
                             <div>Ordertotal:</div>
-                            <div class="payment-summary-amount">$$</div>
+                            <div class="payment-summary-amount">{{ (totalPrice() + shippingCost()).toFixed(2) }}</div>
+                            <div>kr</div>
                         </div>
                     </div>
                     <div class="payment-button-container">

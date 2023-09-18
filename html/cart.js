@@ -61,6 +61,8 @@ const shoppingCart = Vue.createApp({
                 }
             ],
 
+            temporaryComputerStorage: [],
+
         };
     },
 
@@ -68,9 +70,52 @@ const shoppingCart = Vue.createApp({
         
         totalCount(){
             return this.computer.length;
-        }
+        },
+
+        totalPrice() {
+            let total = 0;
+
+            for (const item of this.computer) {
+    
+                const price = parseFloat(item.price);
+                total += price;
+            }
+
+            return total;
+        },
+
+        shippingCost() {
+
+            let totalPrice = 0;
+            let totalShipping = 0;
+
+            for (const item of this.computer) {
+    
+                const price = parseFloat(item.price.replace(',', ''));
+                totalPrice += price;
+            }
+
+            if(totalPrice >= 8000) {
+                return totalShipping;
+            }
+            else {
+                totalShipping = 49;
+                return totalShipping;
+            }
+
+        },
+
+        removeFromCart(index) {
+            const removedItem = this.computer.splice(index, 1)[0];
+            this.temporaryComputerStorage.push(removedItem);
+        },
+
+        
+
     }
+
     
 });
+
 
 shoppingCart.mount('#shoppingCart');

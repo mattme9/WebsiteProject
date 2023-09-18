@@ -105,26 +105,26 @@
    min-width: 100%;
 }
 
-.innerFlexBox, .innerFlexBoxStart, .innerFlexBoxChassi, .innerFlexBoxProcessor, .innerFlexBoxGPU, .innerFlexBoxMotherboard, .innerFlexBoxRAM, .innerFlexBoxHarddrive, .innerFlexBoxFans, .innerFlexBoxCooling, .innerFlexBoxPSU, .innerFlexBoxOS, .innerFlexBoxProvideBuild {
+.innerFlexBox {
   margin: 20px 60px;
   height:100%;
   max-width: 100%;
   word-wrap: break-word;
 }
 
-.innerFlexBoxStart, .innerFlexBoxChassi, .innerFlexBoxProcessor, .innerFlexBoxGPU, .innerFlexBoxMotherboard, .innerFlexBoxRAM, .innerFlexBoxHarddrive, .innerFlexBoxFans, .innerFlexBoxCooling, .innerFlexBoxPSU, .innerFlexBoxOS, .innerFlexBoxProvideBuild h2 {
+.innerFlexBox h2 {
    text-align: center;
    text-transform: uppercase;
    font-weight: bolder;
    padding-bottom: 25px;
  }
 
-.innerFlexBoxStart p {
+.innerFlexBox p {
    text-align: left;
    text-transform: none;
    font-weight: normal;
    padding-bottom: 7px;
-   padding-top: 25px;
+   padding-top: 7px;
 }
 
 .left-flex, .rightFlexBox {
@@ -150,9 +150,10 @@
   display: none;
 }
 
-.innerFlexBoxProvideBuild ul {
+.innerFlexBox ul {
    margin-left: 3rem;
    margin-top: 0.3rem;
+   margin-bottom: 0.3rem;
 }
 
 .monteringsButtonOption {
@@ -186,6 +187,6 @@
 
 .disclaimer {
    position: absolute; /* Positionerar disclaimern absolut inom .innerFlexBoxProvideBuild */
-   right: 0; /* Flyttar disclaimern till höger kant */
-   bottom: 0; /* Flyttar disclaimern till botten */
+   right: 0.4rem; /* Flyttar disclaimern till höger kant */
+   bottom: 0.2rem; /* Flyttar disclaimern till botten */
 }

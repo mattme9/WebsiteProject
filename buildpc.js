@@ -50,4 +50,39 @@ buttons.forEach(function(button, index) {
   
     // Visa den första "innerFlexBox"-diven
     innerFlexBoxes[0].style.display = 'block';
-  };
+
+    // Hitta elementet med klassen 'innerFlexBoxProvideBuild'
+    var provideBuild = document.querySelector('.innerFlexBoxProvideBuild');
+    // Hitta elementet med klassen 'disclaimer'
+    var disclaimer = document.querySelector('.disclaimer');
+
+    // Kontrollera om 'innerFlexBoxProvideBuild' visas när sidan laddas
+    if (provideBuild.style.display === 'none' || provideBuild.style.display === '') {
+        // Om 'innerFlexBoxProvideBuild' inte visas, dölj 'disclaimer'
+        disclaimer.style.display = 'none';
+    } else {
+        // Om 'innerFlexBoxProvideBuild' visas, visa 'disclaimer'
+        disclaimer.style.display = 'block';
+    }
+
+    // Skapa en ny MutationObserver som kommer att kallas när attributen för 'innerFlexBoxProvideBuild' ändras
+    var observer = new MutationObserver(function(mutations) {
+        // Loopa igenom alla mutationer
+        mutations.forEach(function(mutation) {
+            // Kontrollera om attributet som ändrades är 'style'
+            if (mutation.attributeName === 'style') {
+                // Kontrollera om 'innerFlexBoxProvideBuild' visas efter ändringen
+                if (window.getComputedStyle(provideBuild).display !== 'none') {
+                    // Om 'innerFlexBoxProvideBuild' visas, visa 'disclaimer'
+                    disclaimer.style.display = 'block';
+                } else {
+                    // Om 'innerFlexBoxProvideBuild' inte visas, dölj 'disclaimer'
+                    disclaimer.style.display = 'none';
+                }
+            }
+        });
+    });
+
+    // Börja observera ändringar i attributen för 'innerFlexBoxProvideBuild'
+    observer.observe(provideBuild, { attributes: true });
+}

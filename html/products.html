@@ -6,8 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/products.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
-    <script defer src="/script.js"></script>
+    <script defer src="/app.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
+<div id="app">
 <body>
     <header class="header">
         <div class="row-top">
@@ -25,6 +27,8 @@
                 <div class="shopping-cart-icon-container">
                     <img class="shopping-cart-icon" src="/resources/shoppingcart.svg"> <a href="">
                     Kundvagn</a>
+                    <p>{{ cartCount }}</p>
+                    <p></p>
                 </div>
             </div>
         </div>
@@ -36,9 +40,14 @@
         </div>
     </header>
     <main>
-        <div>
-            <div>
-
+            <div class="grid-container">
+                <div class="item" v-for="product in computer" :key='computer.id'>
+                    <img :src="product.image" alt="Product Image">
+                    <h2>{{ product.name }}</h2>
+                    <p>{{ product.description }}</p>
+                    <p id="txtPrice"><span>{{ product.price }}kr</span></p>
+                    <button type="button" @click="addToCart(product)">Lägg till i varukorg</button>
+                </div>
             </div>
         </div>
     </main>

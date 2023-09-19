@@ -25,3 +25,46 @@ window.onclick = function (event) {
       popup.style.display = "none";
    }
 };
+
+// Hämta e-post och telefonnummer fält
+var emailField = document.getElementById("email");
+var phoneField = document.getElementById("phone");
+
+// Lägg till en lyssnare för input-händelsen på e-postfältet
+emailField.addEventListener('input', function (event) {
+   // Validera e-postadressen i realtid
+   var emailRegex = /^[a-z][\w.-]*@[a-z][\w.-]*\.[a-z][a-z]*$/i;
+   if (!emailRegex.test(emailField.value)) {
+      // Om e-postadressen inte är giltig, visa ett felmeddelande
+      emailField.setCustomValidity('Ange en giltig e-postadress.');
+      emailField.reportValidity();
+   } else {
+      // Om e-postadressen är giltig, rensa eventuella felmeddelanden
+      emailField.setCustomValidity('');
+   }
+});
+
+// Lägg till en lyssnare för input-händelsen på telefonfältet
+phoneField.addEventListener('input', function (event) {
+   // Validera telefonnumret i realtid
+   var phoneRegex = /^\d{10}$/;
+   if (!phoneRegex.test(phoneField.value)) {
+      // Om telefonnumret inte är giltigt, visa ett felmeddelande
+      phoneField.setCustomValidity('Ange ett giltigt telefonnummer med 10 siffror.');
+      phoneField.reportValidity();
+   } else {
+      // Om telefonnumret är giltigt, rensa eventuella felmeddelanden
+      phoneField.setCustomValidity('');
+   }
+});
+
+// Lägg till en lyssnare för submit-händelsen på formuläret
+form.addEventListener('submit', function (event) {
+   // Om formuläret inte är giltigt, förhindra att det skickas
+   if (!form.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+   }
+
+   form.classList.add('was-validated');
+});

@@ -160,7 +160,7 @@ footer {
 
 /* Modal Content */
 .popup-content {
-   background-color: #fefefe;
+   background-color: #242526;
    margin: auto;
    padding: 20px;
    border: 1px solid #888;
@@ -180,7 +180,43 @@ footer {
    color: black; /* Ändra till önskad textfärg, här är det svart */
 }
 
+/* Ändra textfärgen på etiketterna till vit */
+.popup-content label {
+   color: white;
+}
 
+/* Ändra bredden på alla textfält till dubbelt så bred */
+.popup-content input[type="text"],
+.popup-content textarea {
+   width: 20%; /* Ändra till önskad bredd */
+}
+
+/* Ändra höjden på textfältet till tre gånger så hög */
+.popup-content textarea {
+   height: 3em; /* Ändra till önskad höjd */
+}
+
+/* Lägg till denna CSS-regel för att ändra utseendet på "Skicka"-knappen */
+.submitButton {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   width: 20%;
+   height: 3rem;
+   margin-top: 1rem;
+   margin-right: 1rem;
+   margin-left: 1rem;
+   background-color: #303233;
+   color: #e1e1e1;
+   font-weight:600;
+   border: 0;
+}
+
+.submitButton:hover {
+   cursor: pointer;
+   opacity: 0.5;
+}
 
 .computer-logo {
    height: 60px;

@@ -14,55 +14,100 @@
       <script defer src="/script.js"></script>
    </head>
    <body>
-      <header class="header">
-         <div class="row-top">
-            <div class="left-section">
-               <div class="logoLink">
-                  <a href="/html/index.html" class="logo-link">
-                     <img class="computer-logo" src="/resources/logo.png" />
-                     <div>COM|VUE|TER</div>
-                  </a>
+      <header>
+         <div class="header-container">
+            <div class="row-top">
+               <nav class="mobile-nav">
+                     <a href="/html/products.html">Våra produkter</a>
+                     <a href="/html/buildpc.html">Bygg din egen dator</a>
+                     <a href="/html/aboutus.html">Om oss</a>
+                     <a href="/html/policy.html">Policy</a>
+                  </nav>
+                  <button class="hamburger">
+                     <div class="bar"></div>
+                  </button>
+               <div class="left-section">
+                  <div class="logo-link">
+                     <a href="/html/index.html" class="logo-link">
+                        <img class="computer-logo" src="/resources/logo.png" />
+                        <div class="logo-text">COM|VUE|TER</div>
+                     </a>
+                  </div>
+               </div>
+               
+               <div class="middle-section">
+                  <div class="search-bar-container">
+                     <div class="search-button">
+                        <button type="submit" class="search-button-icon">
+                           <img src="/resources/search-icon-gray.png"/>
+                        </button>
+                     </div>
+                     <input class="search-bar" type="search" placeholder="Sök här" />
+                  </div>
+               </div>
+               <div class="right-section">
+                  <div class="shopping-cart-icon-container">
+                     <img
+                        class="shopping-cart-icon"
+                        src="/resources/shoppingcart.png"
+                     />
+                     <a href=""> Kundvagn</a>
+                  </div>
                </div>
             </div>
-
-            <div class="middle-section">
+            <div class="row-bottom">
                <div class="search-bar-container">
+                  <div class="search-button">
+                     <button type="submit" class="search-button-icon">
+                        <img src="/resources/search-icon-gray.png"/>
+                     </button>
+                  </div>
                   <input class="search-bar" type="text" placeholder="Sök här" />
-                  <img
-                     class="search-icon"
-                     src="/resources/magnifying-glass-solid.svg"
-                  />
                </div>
-            </div>
-            <div class="right-section">
-               <div class="shopping-cart-icon-container">
-                  <img
-                     class="shopping-cart-icon"
-                     src="/resources/shoppingcart.svg"
-                  />
-                  <a href=""> Kundvagn</a>
-               </div>
-            </div>
-         </div>
-         <div class="row-bottom">
-            <div class="top-menu-link">
-               <a href="/html/products.html">Våra produkter</a>
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/buildpc.html">Bygg din egen dator</a>
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/aboutus.html">Om oss</a>
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/policy.html">Policy</a>
+                  <div class="top-menu-link">
+                     <a href="/html/products.html">Våra produkter</a>
+                  </div>
+                  <div class="top-menu-link">
+                     <a href="/html/buildpc.html">Bygg din egen dator</a>
+                  </div>
+                  <div class="top-menu-link">
+                     <a href="/html/aboutus.html">Om oss</a>
+                  </div>
+                  <div class="top-menu-link">
+                     <a href="/html/policy.html">Policy</a>
+                  </div>
             </div>
          </div>
       </header>
+
       <main>
-         <div>
-            <div></div>
-         </div>
+         <div class="slide-container">
+            <div class="slide fade">
+               <div class="numberText">Lenovo</div>
+               <img src="/resources/products/item1.jpg">
+               <div class="text"></div>
+            </div>
+            <div class="slide fade">
+               <div class="numberText">MacBook Air</div>
+               <img src="/resources/products/item2.png">
+               <div class="text"></div>
+            </div>
+            <div class="slide fade">
+               <div class="numberText">Acer</div>
+               <img src="/resources/products/item3.jpg">
+               <div class="text"></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+        </div>
+
+        <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <br><hr>
       </main>
       <footer>
          <div class="footer-container">

@@ -1,0 +1,79 @@
+footer {
+    position: relative;
+    margin-bottom: 0;
+ 
+    width: 100%;
+    background-color: #242526;
+ }
+ 
+ .footer-container {
+    display: grid;
+    /* grid-template-columns: repeat (auto-fit, minmax(100px, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+ 
+    height: 200px;
+    gap: 5px;
+ }
+ 
+ .footer-container > div {
+    text-align: center;
+    background-color: rgb(30, 39, 103);
+ }
+ 
+ .footer-container p {
+    text-align: left;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+ }
+ 
+ .left-footer-link {
+    text-decoration: underline;
+ }
+ 
+ .left-footer-link:hover {
+    color: slategrey;
+ }
+ 
+ .center-footer-link {
+    text-decoration: underline;
+ }
+ 
+ .center-footer-link:hover {
+    color: slategrey;
+ }
+ 
+ .socials {
+    margin-top: 120px;
+    margin-bottom: 0;
+ }
+ 
+ .socials img {
+    height: 35px;
+    width: auto;
+ }
+ 
+ .socials img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+ }
+
+ /* Modal Content */
+.popup-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+ }
+ 
+ /* Lägg till dessa regler för att ändra textfärg i popup-fönstret */
+ .popup-content input[type="text"],
+ .popup-content textarea {
+    color: black; /* Ändra till önskad textfärg, här är det svart */
+ }
+ 
+ /* Lägg till dessa regler för att ändra textfärg i popup-fönstret */
+ .popup-content input[type="text"],
+ .popup-content label {
+    color: black; /* Ändra till önskad textfärg, här är det svart */
+ }

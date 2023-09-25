@@ -17,7 +17,34 @@ body {
    padding: 2rem;
    margin-bottom: 5rem;
    border-radius: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
+
+.personalContent {
+   display: flex;
+   flex-direction: row;
+}
+
+.personalText {
+   max-width: calc(50% - 1rem); /* Bredden på ramen minus marginaler */
+   border: 1px solid white;
+   padding: 1rem;
+   border-radius: 1rem;
+   box-sizing: border-box;
+   text-align: left;
+   margin-top: 1rem;
+   margin-left: 1rem;
+}
+
+.personalPhoto {
+   max-width: 10rem;
+   max-height: auto;
+}
+
+/* Resten av din CSS-kod för skills och projects kommer här */
+
 
 .skillContainer {
    width: 50%;

@@ -8,3 +8,76 @@ body {
     padding-top: 130px;
     background: linear-gradient(to bottom, #242526, #1c364f);
  }
+
+ .companyInfo {
+    border: 1px solid white;
+    margin: 0 auto; /* Centrera horisontellt */
+    text-align: center; /* Centrera texten */
+    max-width: 70%; /* Max bredd 70% av förälderelementet */
+    margin-top: 5rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    width: 100%; /* Fyll tillgängligt utrymme */
+    border-radius: 4rem;
+ }
+ 
+ .companyInfo h1 {
+    padding: 2rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+ }
+ 
+ .companyInfo p {
+    padding: 2rem;
+    line-height: 30px;
+ }
+
+ .attributes {
+    border: 1px solid grey;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70%;
+    margin-top: 5rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    border-radius: 4rem;
+ }
+
+
+ .attributes h1 {
+    padding: 2rem;
+    text-transform: uppercase;
+ }
+
+ .attributes p {
+    padding: 2rem;
+    line-height: 1.5;
+ }
+
+ .circle-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.circle-container svg {
+    width: 120px; /* Lägg till en fast bredd här */
+}
+
+.attributeNames {
+    display: flex;
+    justify-content: space-around;
+}
+
+.attributeNames h2 {
+    min-width: 15%; /* Lägg till en fast bredd här */
+    text-align: center; /* Centrera texten inom h2-elementet */
+    padding-top: 1rem;
+}
+
+.progress-ring__circle {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 365;
+    stroke-dashoffset: 365;
+}

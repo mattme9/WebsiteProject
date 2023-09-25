@@ -32,7 +32,7 @@
 .employee {
    display: flex;
    align-items: center;
-   max-width: 300px;
+   max-width: calc(50% - 2rem);
    margin: 1rem;
    border: 1px solid rgb(237, 240, 241);
    padding: 1rem;
@@ -85,3 +85,23 @@
 .employeeButton:hover {
    background-color: #333;
 }
+
+
+@media (max-width: 768px) {
+   .companyInfo {
+      max-width: 90%;
+      padding: 1rem; /* minskat från 2rem */
+      margin: 1rem auto; /* lagt till vertikal marginal */
+   }
+ 
+   .employee {
+      max-width: calc(100% - 2rem);
+      min-width: 15rem; /* minskat från 20rem */
+   }
+ 
+   .employeeText {
+      min-width: 5rem; /* minskat från 10rem */
+      max-width: 15rem; /* minskat från 20rem */
+   }
+ }
+ 

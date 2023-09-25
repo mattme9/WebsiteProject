@@ -1,0 +1,106 @@
+
+
+main > div {
+  
+    background-color: rgb(21, 19, 19);
+}
+
+.page-title {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 25px 0 25px 15px;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    column-gap: 12px;
+    align-items: start;
+}
+
+.cart-item-container {
+    margin-bottom: 12px;
+}
+
+.cart-item-details-grid {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /*display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    column-gap: 25px;*/
+}
+
+.cart-item-container, .payment-summary {
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 4px;
+    padding: 18px;
+}
+
+.product-name {
+    font-weight: 700;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+
+.product-price {
+    color: green;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.quantity-container {
+    display: flex;
+}
+
+.quantity-input {
+    margin-left: 7px;
+}
+
+.delete-button {
+    color: black;
+    margin-left: 5px;
+}
+
+.product-image {
+    width: 60px;
+    margin-left: auto;
+    /*float: right;*/
+}
+
+.payment-summary {
+    padding-bottom: 5px;
+}
+
+.payment-summary-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+
+.payment-summary-amount {
+    text-align: right;
+}
+
+.payment-summary-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.quantity-input, .payment-button {
+    color: black;
+}
+
+.payment-button-container {
+    text-align: end;
+    padding-bottom: 5px;
+}
+
+.payment-button {
+    padding: 7px 0;
+    width: 100%;
+}

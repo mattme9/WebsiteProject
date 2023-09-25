@@ -4,9 +4,10 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
-      <link rel="stylesheet" href="/personligaSidor/daniel.css" />
+      <link rel="stylesheet" href="/css/index.css" />
       <link rel="stylesheet" href="/css/header.css" />
       <link rel="stylesheet" href="/css/footer.css" />
+      <link rel="stylesheet" href="/personligaSidor/daniel.css" />
 
       <link
          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
@@ -15,44 +16,72 @@
       <script defer src="/personligaSidor/daniel.js"></script>
    </head>
    <body>
-      <header class="header">
-         <div class="row-top">
-            <div class="left-section">
-               <a href="/html/index.html"></a>
-               <img class="computer-logo" src="/resources/logo.png" />
-               COM|VUE|TER
+      <header>
+         <div class="header-container">
+            <div class="row-top">
+               <nav class="mobile-nav">
+                  <a href="/html/products.html">Våra produkter</a>
+                  <a href="/html/buildpc.html">Bygg din egen dator</a>
+                  <a href="/html/aboutus.html">Om oss</a>
+                  <a href="/html/policy.html">Policy</a>
+               </nav>
+               <button class="hamburger">
+                  <div class="bar"></div>
+               </button>
+               <div class="left-section">
+                  <div class="logo-link">
+                     <a href="/html/index.html" class="logo-link">
+                        <img class="computer-logo" src="/resources/logo.png" />
+                        <div class="logo-text">COM|VUE|TER</div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="middle-section">
+                  <div class="search-bar-container">
+                     <div class="search-button">
+                        <button type="submit" class="search-button-icon">
+                           <img src="/resources/search-icon-gray.png" />
+                        </button>
+                     </div>
+                     <input
+                        class="search-bar"
+                        type="search"
+                        placeholder="Sök här"
+                     />
+                  </div>
+               </div>
+               <div class="right-section">
+                  <div class="shopping-cart-icon-container">
+                     <img
+                        class="shopping-cart-icon"
+                        src="/resources/shoppingcart.png"
+                     />
+                     <a href=""> Kundvagn</a>
+                  </div>
+               </div>
             </div>
-            <div class="middle-section">
+            <div class="row-bottom">
                <div class="search-bar-container">
+                  <div class="search-button">
+                     <button type="submit" class="search-button-icon">
+                        <img src="/resources/search-icon-gray.png" />
+                     </button>
+                  </div>
                   <input class="search-bar" type="text" placeholder="Sök här" />
-                  <img
-                     class="search-icon"
-                     src="/resources/magnifying-glass-solid.svg"
-                  />
                </div>
-            </div>
-            <div class="right-section">
-               <div class="shopping-cart-icon-container">
-                  <img
-                     class="shopping-cart-icon"
-                     src="/resources/shoppingcart.svg"
-                  />
-                  <a href=""> Kundvagn</a>
+               <div class="top-menu-link">
+                  <a href="/html/products.html">Våra produkter</a>
                </div>
-            </div>
-         </div>
-         <div class="row-bottom">
-            <div class="top-menu-link">
-               <a href="/html/products.html">Våra produkter</a>
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/buildpc.html">Bygg din egen dator</a>
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/aboutus.html">Om oss</a>
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/policy.html">Policy</a>
+               <div class="top-menu-link">
+                  <a href="/html/buildpc.html">Bygg din egen dator</a>
+               </div>
+               <div class="top-menu-link">
+                  <a href="/html/aboutus.html">Om oss</a>
+               </div>
+               <div class="top-menu-link">
+                  <a href="/html/policy.html">Policy</a>
+               </div>
             </div>
          </div>
       </header>
@@ -63,42 +92,41 @@
 
          <div class="skills">
             <div class="skill">
-                <label>Hårdvara</label>
-                <div class="progress-container">
-                    <progress max="100" value="90"></progress>
-                    <span class="progress-text">90%</span>
-                </div>
+               <label>Hårdvara</label>
+               <div class="progress-container">
+                  <progress max="100" value="90"></progress>
+                  <span class="progress-text">90%</span>
+               </div>
             </div>
             <div class="skill">
-                <label>Mjukvara</label>
-                <div class="progress-container">
-                    <progress max="100" value="85"></progress>
-                    <span class="progress-text">85%</span>
-                </div>
+               <label>Mjukvara</label>
+               <div class="progress-container">
+                  <progress max="100" value="85"></progress>
+                  <span class="progress-text">85%</span>
+               </div>
             </div>
             <div class="skill">
-                <label>Operativsystem</label>
-                <div class="progress-container">
-                    <progress max="100" value="80"></progress>
-                    <span class="progress-text">80%</span>
-                </div>
+               <label>Operativsystem</label>
+               <div class="progress-container">
+                  <progress max="100" value="80"></progress>
+                  <span class="progress-text">80%</span>
+               </div>
             </div>
             <div class="skill">
-                <label>Nätverkskonfiguration och säkerhet</label>
-                <div class="progress-container">
-                    <progress max="100" value="75"></progress>
-                    <span class="progress-text">75%</span>
-                </div>
+               <label>Nätverkskonfiguration och säkerhet</label>
+               <div class="progress-container">
+                  <progress max="100" value="75"></progress>
+                  <span class="progress-text">75%</span>
+               </div>
             </div>
             <div class="skill">
-                <label>Kundservice och teknisk support</label>
-                <div class="progress-container">
-                    <progress max="100" value="95"></progress>
-                    <span class="progress-text">95%</span>
-                </div>
+               <label>Kundservice och teknisk support</label>
+               <div class="progress-container">
+                  <progress max="100" value="95"></progress>
+                  <span class="progress-text">95%</span>
+               </div>
             </div>
-        </div>
-        
+         </div>
       </main>
       <footer>
          <div class="footer-container">

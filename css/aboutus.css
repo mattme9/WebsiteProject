@@ -44,7 +44,7 @@ body {
 .employee {
    display: flex;
    align-items: center;
-   max-width: 300px;
+   max-width: calc(50% - 2rem);
    margin: 1rem;
    border: 1px solid rgb(237, 240, 241);
    padding: 1rem;
@@ -97,3 +97,22 @@ body {
 .employeeButton:hover {
    background-color: #333;
 }
+
+
+@media (max-width: 768px) {
+   .companyInfo {
+      max-width: calc(80% - 2rem);
+      
+   }
+ 
+   .employee {
+      max-width: calc(100% - 2rem);
+      min-width: 20rem;
+   }
+ 
+   .employeeText {
+      min-width: 10rem;
+      max-width: 20rem;
+   }
+ }
+ 

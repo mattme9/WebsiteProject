@@ -24,7 +24,8 @@ fetch(jsonfile)
     function fillTitles(){
             for (let i = 0; i < projects.length; i++) {
                 document.getElementById('title' + (i + 1)).innerHTML = projects[i].title;
-                document.getElementById('customer' + (i +1)).innerHTML = projects[i].customer;
+                document.getElementById('customer' + (i + 1)).innerHTML = projects[i].customer;
+                document.getElementById('desc' + (i + 1)).innerHTML = projects[i].description;
             }
         }
 

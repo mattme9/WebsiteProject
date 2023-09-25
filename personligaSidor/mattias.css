@@ -127,6 +127,14 @@ body {
     /* Justeringar kan göras här */
 }
 
+.description p{
+    text-align: center;
+    width:40%;
+}
+
+.item2, .item3, .item4, .item5, .item6 > div{
+    padding:100px;
+}
 /*
     display: flex;
     justify-content: space-between;

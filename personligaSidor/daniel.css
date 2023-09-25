@@ -1,73 +1,72 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
-    padding-top: 130px;
-    background: linear-gradient(to bottom, #6f7275, #4e2276, #8c45cf);
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   justify-content: space-between;
+   padding-top: 130px;
+   background: linear-gradient(to bottom, #6f7275, #4e2276, #8c45cf);
 }
 
 .personalContainer {
-    border: 1px solid white;
-    margin: 0 auto;
-    text-align: center;
-    max-width: calc(50%);
-    margin-top: 2rem;
-    padding: 2rem;
-    margin-bottom: 5rem;
-    border-radius: 1rem;
+   border: 1px solid white;
+   margin: 0 auto;
+   text-align: center;
+   max-width: calc(50%);
+   margin-top: 2rem;
+   padding: 2rem;
+   margin-bottom: 5rem;
+   border-radius: 1rem;
 }
 
 .skillContainer {
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    margin-bottom: 1rem;
+   width: 50%;
+   margin: auto;
+   padding: 20px;
+   margin-bottom: 1rem;
 }
 
 .skill {
-    margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .skill label {
-    display: block;
+   display: block;
 }
 
 .skill progress {
-    width: 100%;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    appearance: none;
-   
+   width: 100%;
+   height: 30px;
+   border: none;
+   border-radius: 5px;
+   appearance: none;
 }
 
 .progress-container {
-    position: relative;
-    height: 30px;
+   position: relative;
+   height: 30px;
 }
 
 .progress-text {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translate(0%, -50%);
-    font-weight: bold;
-    color: black;
-    font-size: 16px;
+   position: absolute;
+   top: 50%;
+   right: 1rem;
+   transform: translate(0%, -50%);
+   font-weight: bold;
+   color: black;
+   font-size: 16px;
 }
 
 .projectContainer {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    margin-bottom: 1rem;
+   width: 80%;
+   margin: auto;
+   
+   margin-bottom: 1rem;
 }
 
 .project {
-    border: 1px solid white;
-   
-    border-radius:1rem;
-   
+   border: 1px solid white;
+   margin: 1rem;
+   border-radius: 1rem;
+   padding:1rem;
 }

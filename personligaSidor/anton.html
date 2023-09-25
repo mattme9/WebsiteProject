@@ -12,7 +12,7 @@
          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
          rel="stylesheet"
       />
-      <script defer src="javascript\aboutus.js"></script>
+      <script defer src="anton.js"></script>
    </head>
    <body>
       <header class="header">
@@ -57,7 +57,52 @@
          </div>
       </header>
       <main>
-       
+         <div class="companyInfo">
+            <h1>VÄLKOMMEN BITCHES</h1>
+
+            <p>
+               Anton är en passionerad och erfaren datorbyggare som har arbetat på 
+               “Com|Vue|Ter” sedan 2021. Han ansvarar för att designa och montera kraftfulla 
+               och anpassade datorer för företagets kunder, från gamers till forskare. Anton 
+               har en bakgrund inom datavetenskap och elektronik, och han håller sig alltid 
+               uppdaterad om de senaste trenderna och teknikerna inom datorbranschen. Han är 
+               också en entusiastisk lärare som gärna delar sina kunskaper och tips med sina 
+               kollegor och kunder. Anton är en viktig del av "Com|Vue|Ter"s team som strävar 
+               efter att leverera högkvalitativa och innovativa lösningar för alla datorbehov.
+            </p>
+         </div>
+         <div class="attributes">
+            <h1>Antons kompetens</h1>
+
+            <p>
+               Anton kan skriva kåd.
+            </p>
+            <div class="circle-container">
+               <svg class="progress-ring" width="120" height="120">
+                   <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60" cy="60"/>
+               </svg>
+               <svg class="progress-ring" width="120" height="120">
+                   <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60" cy="60"/>
+               </svg>
+               <svg class="progress-ring" width="120" height="120">
+                   <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60" cy="60"/>
+               </svg>
+               <svg class="progress-ring" width="120" height="120">
+                   <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60" cy="60"/>
+               </svg>
+               <svg class="progress-ring" width="120" height="120">
+                   <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60" cy="60"/>
+               </svg>
+           </div>
+           <div class="attributeNames">
+            <h2 class="attribute1">NVIDIA</h2>
+            <h2 class="attribute2">AMD</h2>
+            <h2 class="attribute3">MONTERING</h2>
+            <h2 class="attribute4">FELSÖKNING</h2>
+            <h2 class="attribute5">KODNING</h2>
+           </div>
+
+         </div>
       </main>
       <footer>
          <div class="footer-container">
@@ -108,20 +153,24 @@
 
                <div id="myPopup" class="popup">
                   <div class="popup-content">
-                     <span class="close"></span>
-                     <form>
-                        <label for="name">Namn</label><br />
-                        <input type="text" id="name" name="name" /><br />
-
-                        <label for="email">Email</label><br />
-                        <input type="text" id="email" name="email" /><br />
-                        <label for="textQuery">Text:</label> <br />
-                        <input type="text" id="textQuery" name="textQuery" />
-                        <br />
-                        <input type="submit" value="Skicka" />
-                     </form>
+                      <span class="close"></span>
+                      <form id="contactForm">
+                          <label for="name">Namn</label><br />
+                          <input type="text" id="name" name="name" required /><br />
+              
+                          <label for="email">Email</label><br />
+                          <input type="text" id="email" name="email" required /><br />
+              
+                          <label for="phone">Telefonnummer</label><br />
+                          <input type="text" id="phone" name="phone" required /><br />
+              
+                          <label for="textQuery">Text:</label> <br />
+                          <textarea id="textQuery" name="textQuery" required></textarea>
+                          <br />
+                          <input type="submit" value="Skicka" class="submitButton" />
+                      </form>
                   </div>
-               </div>
+              </div>
 
                <div class="socials">
                   <img src="\resources\facebook.png" alt="facebook" />

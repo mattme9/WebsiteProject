@@ -3,9 +3,143 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    background: linear-gradient(to bottom, #242526, #1c364f);
+ }
+
+ .grid-container{
+    display:grid;
+    grid-template-columns: 40em;
+    grid-template-rows: 40em 40em 40em 40em 40em 40em;
+    gap: 50em;
+    background-color: #1c364f;
+ }
+
+ .grid-container > div {
+    background-color: rgb(119, 129, 129);
+    text-align:center;
+    padding: 20px 0;
+    font-size:30px;
+ }
+
+ .aboutme-wrapper{
+    width:fit-content;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    left:48%;
+    top:70%;
+ }
+
+.aboutme-container{
+    width:100%;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    padding: 1em 1em;
+}
+
+.aboutme-container *{
+    color:black;
+    font-weight: 500;
+}
+.aboutinfo{
+    display:block;
+    position:absolute;
+    width:45%;
+}
+
+.aboutinfo p{
+    font-size:0.6em;
+}
+.details{
+    width:100%;
+    display:absolute;
+    justify-content: space-between;
+    font-size:0.7em;
+}
+
+.bar{
+    position:relative;
+    border:2px solid #0d96e0;
+    border-radius:20px;
+    margin-bottom:0.2em;
+}
+
+.bar div{
+    position:relative;
+    width:0;
+    height:15px;
+    border-radius:5px;
+    background-color:#e0dc0d;
+}
+
+#photoshop-bar{
+    animation: photoshop-bar 2s forwards;
+}
+@keyframes photoshop-bar{
+    100% {
+        width:70%
+    }
+}
+
+#javascript-bar{
+    animation: javascript-bar 2s forwards;
+}
+@keyframes javascript-bar{
+    100% {
+        width:80%
+    }
+}
+
+#vue-bar{
+    animation: vue-bar 2s forwards;
+}
+@keyframes vue-bar{
+    100% {
+        width:65%
+    }
+}
+
+#laptop-bar{
+    animation: laptop-bar 2s forwards;
+}
+@keyframes laptop-bar{
+    100% {
+        width:90%
+    }
+}
+
+#service-bar{
+    animation: service-bar 2s forwards;
+}
+@keyframes service-bar{
+    100% {
+        width:100%
+    }
+}
+
+.expanding-box{
+    overflow:hidden;
+    max-height:0;
+    transition:max-height 0.5s ease-in-out;
+    /* Justeringar kan göras här */
+}
+
+.description p{
+    text-align: center;
+    width:40%;
+}
+
+.item2, .item3, .item4, .item5, .item6 > div{
+    padding:100px;
+}
+/*
     display: flex;
     justify-content: space-between;
     padding-top: 130px;
    
     background: linear-gradient(to bottom, #242526, #1c364f);
  }
+ */

@@ -132,8 +132,8 @@ body {
     width:40%;
 }
 
-.item2, .item3, .item4, .item5, .item6 > div{
-    padding:100px;
+.item2{
+    display:block;
 }
 /*
     display: flex;

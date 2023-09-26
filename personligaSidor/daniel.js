@@ -23,3 +23,22 @@ document.addEventListener("DOMContentLoaded", function () {
    });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+   var projectContainers = document.querySelectorAll('.project-container');
+
+   function checkVisibility() {
+       projectContainers.forEach(function(container) {
+           var bounding = container.getBoundingClientRect();
+           if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
+               container.classList.add('show');
+           } else {
+               container.classList.remove('show');
+           }
+       });
+   }
+
+   window.addEventListener('scroll', checkVisibility);
+   window.addEventListener('resize', checkVisibility);
+
+   checkVisibility(); // Kolla synlighet när sidan laddas
+});

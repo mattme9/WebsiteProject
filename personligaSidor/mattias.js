@@ -38,6 +38,11 @@ document.addEventListener("scroll", function() {
             description.classList.add("description-animation");
             typingAnimation(description);
             description.setAttribute("data-typed", "true");
+
+            const parentBox = description.closest(".expanding.box");
+            if (parentBox){
+                parentBox.classList.add("expanded");
+            }
         }
     })
 })

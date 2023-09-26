@@ -170,6 +170,27 @@ body,
     border-radius: 10px;
 }
 
+.project h1, h3 {
+    background: linear-gradient(
+        to right,
+        #ededed 0,
+        #493C9F 10%,
+        #ededed 20%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    0%, 10%, 100% {
+        background-position: 0;
+    }
+    50%, 60% {
+        background-position: 550px;
+    }
+}
+
 .customer {
     margin-bottom: 30px;
 }

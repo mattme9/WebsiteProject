@@ -1,43 +1,54 @@
+// Denna kod körs när HTML-dokumentet är helt laddat och klart att användas
 document.addEventListener("DOMContentLoaded", function () {
-   var skills = document.querySelectorAll(".skill progress");
 
+   // Hantera färdighetssektionen
+   let skills = document.querySelectorAll(".skill progress");
+
+   // Loopa igenom varje färdighetsmätare
    skills.forEach(function (skill) {
-      var value = skill.getAttribute("value");
-      var max = skill.getAttribute("max");
-      var progress = 0;
-      var duration = (value / max) * 1000; // Används 2 sekunders duration som exempel (justera vid behov)
-      var increment = value / (duration / 10); // Räknar upp med 10 steg per sekund
+      // Hämta färdighetsvärdet och maxvärdet för varje mätare
+      let value = skill.getAttribute("value");
+      let max = skill.getAttribute("max");
+      let progress = 0; // En variabel för att hålla reda på nuvarande framsteg
+      let duration = (value / max) * 1000; // Används 2 sekunders duration som exempel (justera vid behov)
+      let increment = value / (duration / 10); // Räknar upp med 10 steg per sekund
 
-      var progressText = skill.parentElement.querySelector(".progress-text");
+      // Hitta den tillhörande texten för att visa framstegsprocenten
+      let progressText = skill.parentElement.querySelector(".progress-text");
 
-      var interval = setInterval(function () {
+      // Skapa ett interval som uppdaterar framsteg och text
+      let interval = setInterval(function () {
+         // Om framsteg inte har nått målet ännu
          if (progress < value) {
-            progress += increment;
-            skill.value = progress;
-            progressText.innerText = Math.round(progress) + "%";
+            progress += increment; // Öka framsteg med inkrementet
+            skill.value = progress; // Uppdatera färdighetsmätarens värde
+            progressText.innerText = Math.round(progress) + "%"; // Uppdatera texten med avrundat värde
          } else {
-            clearInterval(interval);
-            progressText.innerText = value + "%";
+            clearInterval(interval); // Stoppa intervallet när målet är nått
+            progressText.innerText = value + "%"; // Sätt texten till slutgiltig procentandel
          }
       }, 10); // Uppdatera var 10 ms (10 steg per sekund)
    });
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-   var projectContainers = document.querySelectorAll('.project-container');
+   // Hantera projektsektionen
+   let projectContainers = document.querySelectorAll('.project-container');
 
+   // Funktion för att kolla synlighet av projektcontainrar när sidan scrollas
    function checkVisibility() {
        projectContainers.forEach(function(container) {
-           var bounding = container.getBoundingClientRect();
+           let bounding = container.getBoundingClientRect();
            if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
-               container.classList.add('show');
+               container.classList.add('show'); // Lägg till klassen "show" om projektet är synligt
            } else {
-               container.classList.remove('show');
+               container.classList.remove('show'); // Ta bort klassen "show" om projektet inte är synligt
            }
        });
    }
 
+   // Lyssna efter scrollhändelser och anropa checkVisibility
    window.addEventListener('scroll', checkVisibility);
+
+   // Lyssna efter ändringar i fönstrets storlek och anropa checkVisibility
    window.addEventListener('resize', checkVisibility);
 
    checkVisibility(); // Kolla synlighet när sidan laddas

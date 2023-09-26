@@ -6,6 +6,17 @@
     flex: 1;
  }
 
+ body {
+   font-family: "Montserrat", sans-serif;
+
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   display: flex;
+   justify-content: space-between;
+   background-color: #242526;
+}
+
  .pcbuildersection {
    display: flex;
    justify-content: space-between;

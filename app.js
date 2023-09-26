@@ -46,6 +46,20 @@ const app = Vue.createApp({
                     image: '/resources/products/item6.jpg',
                     price: '2999'
                 },
+                {
+                    id:7,
+                    name: 'Chromebook',
+                    description: 'Smidig',
+                    image: '/resources/products/item7.jpg',
+                    price: '4699'
+                },
+                {
+                    id:8,
+                    name: 'Macintosh',
+                    description: 'Veteran',
+                    image: 'bild',
+                    price: '7999'
+                }
             ],
             shoppingCart: [],
             cartCount: 0,

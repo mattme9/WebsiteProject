@@ -6,6 +6,7 @@ menuBtn.addEventListener('click', function() {
    mobileMenu.classList.toggle('is-active');
 });
 
+
 let sIndex = 1;
 showSlides(sIndex);
 
@@ -92,6 +93,7 @@ phoneField.addEventListener('input', function (event) {
       phoneField.setCustomValidity('');
    }
 });
+
 
 // Lägg till en lyssnare för submit-händelsen på formuläret
 form.addEventListener('submit', function (event) {

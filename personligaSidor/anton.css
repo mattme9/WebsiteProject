@@ -116,3 +116,38 @@ body {
     padding: 2rem;
     line-height: 30px;
 }
+
+.nvidia li, .amd li, .mount li, .troubleshooting li, .coding li {
+   padding: 2rem;
+   line-height: 30px;
+}
+
+/* Lägg till din övergång och hover-effekt här */
+.attributeNames h2,
+#nvidia,
+#amd,
+#mount,
+#troubleshooting,
+#coding {
+    transition: all 0.5s ease;
+}
+
+.attributeNames h2:hover,
+#nvidia:hover,
+#amd:hover,
+#mount:hover,
+#troubleshooting:hover,
+#coding:hover {
+    transform: scale(1.1);
+}
+
+/* Definiera en keyframes-animation som roterar ett element 360 grader */
+@keyframes roll {
+   from { transform: rotate(0deg); }
+   to { transform: rotate(360deg); }
+}
+
+/* Lägg till animationen till alla element med klassen 'roll' */
+body.roll {
+   animation: roll 2s ease;
+}

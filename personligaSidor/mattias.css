@@ -127,19 +127,35 @@ body {
     /* Justeringar kan göras här */
 }
 
-.description p{
-    text-align: center;
-    width:40%;
+.description{
+    opacity:0;
+    transform: translateY(20px);
+    transition: opacity 0.5 ease, transform 0.5s ease;
 }
 
-.item2{
-    display:block;
+.description-animation{
+    opacity: 1;
+    transform: translateY(0);
 }
-/*
-    display: flex;
-    justify-content: space-between;
-    padding-top: 130px;
-   
-    background: linear-gradient(to bottom, #242526, #1c364f);
- }
- */
+
+.description p{
+    text-align: center;
+    font-size:0.8em;
+}
+
+.titleLine{
+    display:block;
+    margin-bottom:1em;
+}
+
+.title{
+    margin-top:2em;
+    font-family:'Quicksand',sans-serif;
+}
+
+.customer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:italic;
+    color:#719aee;
+    margin-bottom:1em;
+}

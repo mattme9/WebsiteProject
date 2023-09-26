@@ -1,4 +1,3 @@
-console.log("Test!");
 const jsonfile = 'mattias.json';
 var projects = [];
 
@@ -22,68 +21,40 @@ fetch(jsonfile)
     });
 
     function fillTitles(){
-            for (let i = 0; i < projects.length; i++) {
-                document.getElementById('title' + (i + 1)).innerHTML = projects[i].title;
-                document.getElementById('customer' + (i + 1)).innerHTML = projects[i].customer;
-                document.getElementById('desc' + (i + 1)).innerHTML = projects[i].description;
-            }
+        for (let i = 0; i < projects.length; i++) {
+            document.getElementById('title' + (i + 1)).innerHTML = projects[i].title;
+            document.getElementById('customer' + (i + 1)).innerHTML = projects[i].customer;
+            document.getElementById('desc' + (i + 1)).innerHTML = projects[i].description;
         }
+    }
 
+document.addEventListener("scroll", function() {
+    const descriptions = document.querySelectorAll(".description");
+    descriptions.forEach(function (description) {
+        const descriptionPosition = description.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.5;
 
-const matt = Vue.createApp({
-    data() {
-        return{
-            projects: [
-                {
-                    pid: 1,
-                    title: 'Raket',
-                    customer: 'SAAB',
-                    description: 'fill'
-                },
-                {
-                    pid: 2,
-                    title: ''
-                }
-            ],
-            message: 'content',
-            title: " "
+        if(descriptionPosition < screenPosition && !description.hasAttribute("data-typed")){
+            description.classList.add("description-animation");
+            typingAnimation(description);
+            description.setAttribute("data-typed", "true");
         }
-    },
+    })
+})
 
-    methods: {
-        
+function typingAnimation(element) {
+    const text = element.textContent.trim();
+    element.textContent = '';
+
+    let index = 0;
+
+    function type(){
+        if(index < text.length) {
+            element.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 50);
+        }
     }
-});
 
-matt.mount('#matt');
-
-const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore";
-
-const descriptionElement = document.getElementById('descriptionTxt');
-const descriptionText = text;
-const typingSpeed = 50;
-
-let currentIndex = 0;
-let aniStarted = false;
-
-function typeDescription() {
-    if (currentIndex < descriptionText.length) {
-        descriptionElement.innerHTML += descriptionText.charAt(currentIndex);
-        currentIndex++;
-        setTimeout(typeDescription, typingSpeed);
-    }
-}
-
-typeDescription();
-
-window = new Window();
-
-function checkAnimation() {
-    const elementTop = descriptionElement.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if(elementTop <= windowHeight && !animationStarted){
-        typeDescription();
-        animationStarted = true;
-    }
+    type();
 }

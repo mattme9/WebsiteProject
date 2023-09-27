@@ -35,15 +35,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
    // Funktion för att kolla synlighet av projektcontainrar när sidan scrollas
    function checkVisibility() {
-       projectContainers.forEach(function(container) {
-           let bounding = container.getBoundingClientRect();
-           if (bounding.top >= 0 && bounding.bottom <= window.innerHeight) {
-               container.classList.add('show'); // Lägg till klassen "show" om projektet är synligt
-           } else {
-               container.classList.remove('show'); // Ta bort klassen "show" om projektet inte är synligt
-           }
-       });
-   }
+    projectContainers.forEach(function(container) {
+        let bounding = container.getBoundingClientRect();
+
+        // Beroende på skärmstorlek, använd olika aktiveringszoner
+        let activationZone = 200; // Standardaktiveringszon
+
+        if (window.innerWidth <= 768) {
+            // För skärmar mindre än eller lika med 768px bredd
+            activationZone = 100; // Använd en mindre aktiveringszon
+        }
+
+        if (bounding.top >= 0 && bounding.bottom <= window.innerHeight + activationZone) {
+            container.classList.add('show'); // Lägg till klassen "show" om projektet är synligt (+ aktiveringszon)
+        } else {
+            container.classList.remove('show'); // Ta bort klassen "show" om projektet inte är synligt
+        }
+    });
+}
+
 
    // Lyssna efter scrollhändelser och anropa checkVisibility
    window.addEventListener('scroll', checkVisibility);

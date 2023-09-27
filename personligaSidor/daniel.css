@@ -1,129 +1,146 @@
 body {
-   font-family: "Montserrat", sans-serif;
-   display: flex;
-   flex-direction: column;
-   min-height: 100vh;
-   justify-content: space-between;
-   padding-top: 130px;
-   background: linear-gradient(to bottom, #6f7275, #4e2276, #8c45cf);
-   line-height: 25px;
-}
-
-.personal-container {
-   border: 1px solid white;
-   margin: 0 auto;
-   text-align: center;
-   max-width: calc(80%);
-   margin-top: 2rem;
-   padding:1rem;
-   margin-bottom: 5rem;
-   border-radius: 1rem;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   
-}
-
-.personal-content {
-   display: flex;
-   flex-direction: row;
-}
-
-.personal-text {
-   max-width: 50rem;
-   border: 1px solid white;
-   padding: 1rem;
-   border-radius: 1rem;
-   box-sizing: border-box;
-   text-align: left;
-   margin-top: 1rem;
-   margin-left: 1rem;
-}
-
-.personal-photo {
-   max-width: 10rem;
-   max-height: auto;
-}
-/* Resten av din CSS-kod för skills och projects kommer här */
-
-
-.skill-container {
-   width: 50%;
-   margin: auto;
-   padding: 20px;
-   margin-bottom: 1rem;
-   text-align:center;
-
-}
-
-.skill-container h1 {
-   margin-bottom: 2rem;
-}
-
-.skill {
-   margin-bottom: 20px;
-}
-
-.skill label {
-   display: block;
-}
-
-.skill progress {
-   width: 100%;
-   height: 30px;
-   border: none;
-   border-radius: 5px;
-   appearance: none;
-}
-
-.progress-container {
-   position: relative;
-   height: 30px;
-   
-}
-
-
-.progress-text {
-   position: absolute;
-   top: 50%;
-   right: 1rem;
-   transform: translate(0%, -50%);
-   font-weight: bold;
-   color: black;
-   font-size: 16px;
-}
-
-.project-container {
-  
-   width: 60%;
-   margin: auto;
-   text-align: center;
-   margin-bottom: 10rem;
-   border: 1px solid white;
-   border-radius: 1rem;
-
-}
-.project-container h1{
-  
- padding-top: 1rem;
-}
-
-.project {
-  
-   margin: 1rem;
-   
-   padding:1rem;
-
-}
-
-
-
-
-.project-container {
-   opacity: 0; /* Gör elementet osynligt som standard */
-   transition: opacity 0.5s ease; /* Lägg till en övergångseffekt för opacity */
-}
-
-.project-container.show {
-   opacity: 1; /* Gör elementet synligt när klassen "show" läggs till */
-}
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    padding-top: 130px;
+    background: linear-gradient(to bottom, #6f7275, #4e2276, #8c45cf);
+    line-height: 25px;
+ }
+ 
+ .personal-container {
+    border: 1px solid white;
+    margin: 0 auto;
+    text-align: center;
+    max-width: calc(80%);
+    max-height: auto;
+    margin-top: 2rem;
+    padding:1rem;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ .personal-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ .personal-text {
+    max-width: 50rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 1rem;
+ }
+ 
+ .personal-photo {
+    width: 20%;
+    max-height: 20%;
+    object-fit: cover;
+ }
+ 
+ .skill-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 1rem;
+    text-align:center;
+ }
+ 
+ .skill-container h1 {
+    margin-bottom: 2rem;
+ }
+ 
+ .skill {
+    margin-bottom: 20px;
+ }
+ 
+ .skill label {
+    display: block;
+ }
+ 
+ .skill progress {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    appearance: none;
+ }
+ 
+ .progress-container {
+    position: relative;
+    height: 30px;
+ }
+ 
+ .progress-text {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translate(0%, -50%);
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+ }
+ 
+ .project-container {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10rem;
+    border: 1px solid white;
+    border-radius: 1rem;
+ }
+ 
+ .project-container h1 {
+    padding-top: 1rem;
+ }
+ 
+ .project {
+    margin: 1rem;
+    padding:1rem;
+ }
+ 
+ .project-container {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+ }
+ 
+ .project-container.show {
+    opacity: 1;
+ }
+ 
+ /* Media Queries för mobilanpassning */
+ 
+ @media screen and (max-width: 768px) {
+    .personal-container {
+       max-width: 90%; /* Anpassa bredden för mindre skärmar */
+    }
+ 
+    .personal-text {
+       max-width: 100%; /* Anpassa textens bredd för mindre skärmar */
+       margin-left: 0; /* Ta bort vänstermarginal för texten */
+    }
+ 
+    .personal-photo {
+       width: 50%; /* Anpassa bildens bredd för mindre skärmar */
+       max-height: 50%; /* Anpassa bildens höjd för mindre skärmar */
+    }
+ 
+    .skill-container {
+       width: 80%; /* Anpassa bredden för mindre skärmar */
+    }
+ 
+    .project-container {
+       width: 80%; /* Anpassa bredden för mindre skärmar */
+    }
+ }
+ 

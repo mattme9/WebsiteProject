@@ -42,6 +42,13 @@ document.addEventListener("scroll", function() {
             const parentBox = description.closest(".expanding.box");
             if (parentBox){
                 parentBox.classList.add("expanded");
+
+                const titleElement = parentBox.querySelector(".title");
+                const customerElement = parentBox.querySelector(".customer");
+                
+                // Add a class to trigger the fade-in effect
+                titleElement.classList.add("fade-in");
+                customerElement.classList.add("fade-in");
             }
         }
     })
@@ -57,7 +64,7 @@ function typingAnimation(element) {
         if(index < text.length) {
             element.textContent += text.charAt(index);
             index++;
-            setTimeout(type, 50);
+            setTimeout(type, 20);
         }
     }
 

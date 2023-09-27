@@ -1,105 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="/css/index.css">
+      <link rel="stylesheet" href="/css/aboutus.css" />
+      <link rel="stylesheet" href="/css/header.css" />
+      <link rel="stylesheet" href="/css/footer.css" />
 
-<head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Document</title>
-   <link rel="stylesheet" href="/css/index.css" />
-   <link rel="stylesheet" href="/css/aboutus.css" />
-   <link rel="stylesheet" href="/css/header.css" />
-   <link rel="stylesheet" href="/css/footer.css" />
-
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
-      rel="stylesheet" />
-   <script defer src="javascript\aboutus.js"></script>
-</head>
-
-<body>
-   <header>
-      <div class="header-container">
-         <div class="row-top">
-            <nav class="mobile-nav">
-               <a href="/html/products.html">Våra produkter</a>
-               <a href="/html/buildpc.html">Bygg din egen dator</a>
-               <a href="/html/aboutus.html">Om oss</a>
-               <a href="/html/policy.html">Policy</a>
-            </nav>
-            <button class="hamburger">
-               <div class="bar"></div>
-            </button>
-            <div class="left-section">
-               <div class="logo-link">
-                  <a href="/html/index.html" class="logo-link">
-                     <img class="computer-logo" src="/resources/logo.png" />
-                     <div class="logo-text">COM|VUE|TER</div>
-                  </a>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+         rel="stylesheet"
+      />
+      <script defer src="javascript\aboutus.js"></script>
+      <script defer src="/javascript/script.js"></script>
+   </head>
+   <body>
+      <header>
+         <div class="header-container">
+            <div class="row-top">
+               <nav class="mobile-nav">
+                     <a href="/html/products.html">Våra produkter</a>
+                     <a href="/html/buildpc.html">Bygg din egen dator</a>
+                     <a href="/html/aboutus.html">Om oss</a>
+                     <a href="/html/policy.html">Policy</a>
+                  </nav>
+                  <button class="hamburger">
+                     <div class="bar"></div>
+                  </button>
+               <div class="left-section">
+                  <div class="logo-link">
+                     <a href="/html/index.html" class="logo-link">
+                        <img class="computer-logo" src="/resources/logo.png" />
+                        <div class="logo-text">COM|VUE|TER</div>
+                     </a>
+                  </div>
+               </div>
+               
+               <div class="middle-section">
+                  <div class="search-bar-container">
+                     <div class="search-button">
+                        <button type="submit" class="search-button-icon">
+                           <img src="/resources/search-icon-gray.png"/>
+                        </button>
+                     </div>
+                     <input class="search-bar" type="search" placeholder="Sök här" />
+                  </div>
+               </div>
+               <div class="right-section">
+                  <div class="shopping-cart-icon-container">
+                     <img
+                        class="shopping-cart-icon"
+                        src="/resources/shoppingcart.png"
+                     />
+                     <a href=""> Kundvagn</a>
+                  </div>
                </div>
             </div>
-
-            <div class="middle-section">
+            <div class="row-bottom">
                <div class="search-bar-container">
                   <div class="search-button">
                      <button type="submit" class="search-button-icon">
-                        <img src="/resources/search-icon-gray.png" />
+                        <img src="/resources/search-icon-gray.png"/>
                      </button>
                   </div>
-                  <input class="search-bar" type="search" placeholder="Sök här" />
+                  <input class="search-bar" type="text" placeholder="Sök här" />
                </div>
-            </div>
-            <div class="right-section">
-               <div class="shopping-cart-icon-container">
-                  <img class="shopping-cart-icon" src="/resources/shoppingcart.png" />
-                  <a href=""> Kundvagn</a>
-               </div>
+                  <div class="top-menu-link">
+                     <a href="/html/products.html">Våra produkter</a>
+                  </div>
+                  <div class="top-menu-link">
+                     <a href="/html/buildpc.html">Bygg din egen dator</a>
+                  </div>
+                  <div class="top-menu-link">
+                     <a href="/html/aboutus.html">Om oss</a>
+                  </div>
+                  <div class="top-menu-link">
+                     <a href="/html/policy.html">Policy</a>
+                  </div>
             </div>
          </div>
-         <div class="row-bottom">
-            <div class="search-bar-container">
-               <div class="search-button">
-                  <button type="submit" class="search-button-icon">
-                     <img src="/resources/search-icon-gray.png" />
-                  </button>
-               </div>
-               <input class="search-bar" type="text" placeholder="Sök här" />
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/products.html">Våra produkter</a>
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/buildpc.html">Bygg din egen dator</a>
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/aboutus.html">Om oss</a>
-            </div>
-            <div class="top-menu-link">
-               <a href="/html/policy.html">Policy</a>
-            </div>
-         </div>
-      </div>
-   </header>
-   <main>
-      <div>
-         <div class="companyInfo">
-            <h1>VÅR VISION</h1>
+      </header>
+      <main>
+         <div>
+            <div class="companyInfo">
+               <h1>VÅR VISION</h1>
 
-            <p>
-               På ComVueTer tycker vi att det ska vara både lätt och roligt att
-               bygga en dator. Vi förstår att varje person har unika behov
-               och preferenser när det gäller deras dator, och vi är här för
-               att hjälpa till att göra din vision till verklighet. Med vår
-               expertis och passion för teknik, strävar vi efter att ge dig
-               den bästa möjliga upplevelsen. Oavsett om du är en erfaren
-               datorbyggare eller om detta är din första gång, är vårt team
-               här för att vägleda dig genom varje steg i processen. Vi ser
-               fram emot att hjälpa dig att skapa din drömdator på ComVueTer
-               - där teknik möter kreativitet.
-            </p>
-         </div>
-         <div class="employeeContainer">
+               <p>
+                  På ComVueTer tycker vi att det ska vara både lätt och roligt att
+                  bygga en dator. Vi förstår att varje person har unika behov
+                  och preferenser när det gäller deras dator, och vi är här för
+                  att hjälpa till att göra din vision till verklighet. Med vår
+                  expertis och passion för teknik, strävar vi efter att ge dig
+                  den bästa möjliga upplevelsen. Oavsett om du är en erfaren
+                  datorbyggare eller om detta är din första gång, är vårt team
+                  här för att vägleda dig genom varje steg i processen. Vi ser
+                  fram emot att hjälpa dig att skapa din drömdator på ComVueTer
+                  - där teknik möter kreativitet.
+               </p>
+            </div>
+            <div class="employeeContainer">
             <div class="employees">
                <div class="employee">
-                  <img src="/resources\employees\employee1.jpg" alt="Anställd 1" />
+                  <img
+                     src="/resources\employees\employee1.jpg"
+                     alt="Anställd 1"
+                  />
                   <div class="employeeText">
                      <h2>Anton</h2>
                      <h3>Head of Customer Service</h3>
@@ -109,135 +116,147 @@
                         för kundservice Brinner för kundservice Brinner för
                         kundservice Brinner för kundservice
                      </p>
-
+                     
                      <div>
                         <a href="/personligaSidor\anton.html">
-                           <button class="employeeButton">Läs mer om mig!</button></a>
-                     </div>
+                        <button class="employeeButton">Läs mer om mig!</button></a>
+                    </div>
                   </div>
                </div>
                <div class="employee">
-                  <img src="/resources\employees\employee1.jpg" alt="Anställd 1" />
-                  <div class="employeeText">
-                     <h2>William</h2>
-                     <h3>Inköpsansvarig</h3>
-                     <br />
-                     <p>
-                        Vår inköpsansvarige på ComVueTer är expert på att säkerställa högkvalitativa komponenter till
-                        våra produkter. Med noggrannhet och branschkännedom skapar han en pålitlig försörjningskedja.
-                     </p>
+                <img
+                   src="/resources\employees\employee1.jpg"
+                   alt="Anställd 1"
+                />
+                <div class="employeeText">
+                   <h2>William</h2>
+                   <h3>Head of Customer Service</h3>
+                   <br />
+                   <p>
+                      Brinner för kundservice Brinner för kundservice Brinner
+                      för kundservice Brinner för kundservice Brinner för
+                      kundservice Brinner för kundservice
+                   </p>
+                   
+                   <div>
+                    <a href="/personligaSidor\william.html">
+                        <button class="employeeButton">Läs mer om mig!</button></a>
+                  </div>
+                </div>
+             </div><div class="employee">
+                <img
+                   src="/resources\employees\employee1.jpg"
+                   alt="Anställd 1"
+                />
+                <div class="employeeText">
+                   <h2>Mattias</h2>
+                   <h3>Head of dricka jävligt mycket öl</h3>
+                   <br />
+                   <p>
+                      Brinner för kundservice Brinner för kundservice Brinner
+                      för kundservice Brinner för kundservice Brinner för
+                      kundservice Brinner för kundservice
+                   </p>
+                   
+                   <div>
+                    <a href="/personligaSidor\mattias.html">
+                        <button class="employeeButton">Läs mer om mig!</button></a>                  </div>
+                </div>
+             </div><div class="employee">
+                <img
+                   src="/resources\employees\employee1.jpg"
+                   alt="Anställd 1"
+                />
+                <div class="employeeText">
+                   <h2>Daniel</h2>
+                   <h3>Head of Customer Service</h3>
+                   <br />
+                   <p>
+                      Brinner för kundservice Brinner för kundservice Brinner
+                      för kundservice Brinner för kundservice Brinner för
+                      kundservice Brinner för kundservice
+                   </p>
+                   
+                   <div>
+                    <a href="/personligaSidor\daniel.html">
+                        <button class="employeeButton">Läs mer om mig!</button></a>                  </div>
+                </div>
+             </div>
+            </div>
+        </div>
+         </div>
+      </main>
+      <footer>
+         <div class="footer-container">
+            <div class="left-footer">
+               <h2>Policy</h2>
+               <p>
+                  ComVueTer strävar efter att ge bästa möjliga kundupplevelse.
+                  Vi följer strikta riktlinjer för kvalitet och service. Vi
+                  respekterar dina rättigheter som kund och skyddar din
+                  integritet. 
+               </p>   
+                  <a href="/html/policy.html"><span class="left-footer-link"
+                        >Läs mer om vår policy</span
+                     ></a
+                  >
+               
+            </div>
 
-                     <div>
-                        <a href="/personligaSidor\william.html">
-                           <button class="employeeButton">Läs mer om mig!</button></a>
-                     </div>
+            <div class="center-footer">
+               <h2>Om oss</h2>
+               <p>
+                  ComVueTer är ditt go-to företag för tekniklösningar. Vi
+                  erbjuder toppmoderna datorkomponenter och skräddarsydda
+                  datorer, från gaming till kontor. <br />
+                  Vårt expertteam levererar bästa möjliga kundupplevelse och de
+                  senaste produkterna. Vi skapar inte bara datorer, vi
+                  förverkligar drömmar. <br />
+               </p>
+                  <a href="/html/aboutus.html"
+                     ><span class="center-footer-link">Klicka här</span></a
+                  >
+                  <span>för mer info om oss</span>
+               
+            </div>
+
+            <div class="right-footer">
+               <h2>Kontakt</h2>
+               <p>
+                  Telefon: 123-123123 <br />
+                  Email: info@comvueter.com <br />
+                  Adress: Proceassorvägen 1337, Örebro <br />
+               </p>
+
+                  <a href="#" id="contactForm"><span>Kontakta oss</span></a>
+
+                  <!-- Popup Formulär -->
+               
+
+               <div id="myPopup" class="popup">
+                  <div class="popup-content">
+                     <span class="close"></span>
+                     <form>
+                        <label for="name">Namn</label><br />
+                        <input type="text" id="name" name="name" /><br />
+
+                        <label for="email">Email</label><br />
+                        <input type="text" id="email" name="email" /><br />
+                        <label for="textQuery">Text:</label> <br />
+                        <input type="text" id="textQuery" name="textQuery" />
+                        <br />
+                        <input type="submit" value="Skicka" />
+                     </form>
                   </div>
                </div>
-               <div class="employee">
-                  <img src="/resources\employees\employee1.jpg" alt="Anställd 1" />
-                  <div class="employeeText">
-                     <h2>Mattias</h2>
-                     <h3>Kundserviceansvarig</h3>
-                     <br />
-                     <p>
-                        Dedikerad till att leverera exceptionell service. Med ett
-                        lyhört och proaktivt förhållningssätt garanterar han att varje kund får den hjälp och support de
-                        behöver.
-                     </p>
 
-                     <div>
-                        <a href="/personligaSidor\mattias.html">
-                           <button class="employeeButton">Läs mer om mig!</button></a>
-                     </div>
-                  </div>
-               </div>
-               <div class="employee">
-                  <img src="/resources\employees\anka.jpg" alt="Anställd 1" />
-                  <div class="employeeText">
-                     <h2>Daniel</h2>
-                     <h3>Driftansvarig</h3>
-                     <br />
-                     <p>
-                        Daniel är ComVueTers driftansvarige med expertis inom datorlösningar. Hans tekniska skicklighet
-                        garanterar en problemfri systemdrift och hög kundnöjdhet.
-                     </p>
-
-                     <div>
-                        <a href="/personligaSidor\daniel.html">
-                           <button class="employeeButton">Läs mer om mig!</button></a>
-                     </div>
-                  </div>
+               <div class="socials">
+                  <img src="\resources\facebook.png" alt="facebook" />
+                  <img src="\resources\instagram.png" alt="instagram" />
+                  <img src="\resources\discord.png" alt="discord" />
                </div>
             </div>
          </div>
-      </div>
-   </main>
-   <footer>
-      <div class="footer-container">
-         <div class="left-footer">
-            <h2>Policy</h2>
-            <p>
-               ComVueTer strävar efter att ge bästa möjliga kundupplevelse.
-               Vi följer strikta riktlinjer för kvalitet och service. Vi
-               respekterar dina rättigheter som kund och skyddar din
-               integritet. <br /><br /><br /><br />
-               <a href="/html/policy.html"><span class="left-footer-link">Läs mer om vår policy</span></a>
-            </p>
-         </div>
-
-         <div class="center-footer">
-            <h2>Om oss</h2>
-            <p>
-               ComVueTer är ditt go-to företag för tekniklösningar. Vi
-               erbjuder toppmoderna datorkomponenter och skräddarsydda
-               datorer, från gaming till kontor. <br />
-               Vårt expertteam levererar bästa möjliga kundupplevelse och de
-               senaste produkterna. Vi skapar inte bara datorer, vi
-               förverkligar drömmar. <br />
-               <br />
-               <a href="/html/aboutus.html"><span class="center-footer-link">Klicka här</span></a>
-               för mer info om oss
-            </p>
-         </div>
-
-         <div class="right-footer">
-            <h2>Kontakt</h2>
-            <p>
-               Telefon: 123-123123 <br />
-               Email: info@comvueter.com <br />
-               Adress: Proceassorvägen 1337, Örebro <br />
-               <br /><br /><br />
-
-               <a href="#" id="contactForm">Kontakta oss</a>
-
-               <!-- Popup Formulär -->
-            </p>
-
-            <div id="myPopup" class="popup">
-               <div class="popup-content">
-                  <span class="close"></span>
-                  <form>
-                     <label for="name">Namn</label><br />
-                     <input type="text" id="name" name="name" /><br />
-
-                     <label for="email">Email</label><br />
-                     <input type="text" id="email" name="email" /><br />
-                     <label for="textQuery">Text:</label> <br />
-                     <input type="text" id="textQuery" name="textQuery" />
-                     <br />
-                     <input type="submit" value="Skicka" />
-                  </form>
-               </div>
-            </div>
-
-            <div class="socials">
-               <img src="\resources\facebook.png" alt="facebook" />
-               <img src="\resources\instagram.png" alt="instagram" />
-               <img src="\resources\discord.png" alt="discord" />
-            </div>
-         </div>
-      </div>
-   </footer>
-</body>
-
+      </footer>
+   </body>
 </html>

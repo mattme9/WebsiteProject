@@ -187,7 +187,7 @@ body,
         background-position: 0;
     }
     50%, 60% {
-        background-position: 550px;
+        background-position: 750px;
     }
 }
 
@@ -235,6 +235,17 @@ body,
 @media screen and (max-width: 500px) {
     .first-img {
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .headline,
+    .headline::before {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
     }
 }
 

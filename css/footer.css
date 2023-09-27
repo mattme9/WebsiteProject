@@ -18,8 +18,7 @@
 
 .footer-container p {
    text-align: left;
-   padding-left: 1rem;
-   padding-top: 0.5rem;
+   padding: 0.5rem 1rem 2rem 1rem;
 }
 
 .left-footer-link {
@@ -126,6 +125,35 @@
 .submitButton:hover {
    cursor: pointer;
    opacity: 0.5;
+}
+
+@media screen and (max-width: 390px) {
+   .footer-container {
+      display: block;
+      align-items: center;
+   }
+
+   .left-footer,
+   .center-footer,
+   .right-footer {
+      padding: 20px 0;
+   }
+
+   .left-footer h2,
+   .center-footer h2,
+   .right-footer h2{
+      font-size: 35px;
+   }
+
+   .left-footer span,
+   .center-footer span,
+   .right-footer span{
+      font-size: 25px;
+   }
+   
+   .footer-container p {
+      display: none;
+   }
 }
 
 

@@ -28,7 +28,7 @@ fetch(jsonfile)
     }
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Hantera färdighetssektionen
+    // Hantera färdighetssektionenaa
     let skills = document.querySelectorAll(".skill progress");
  
     // Loopa igenom varje färdighetsmätare

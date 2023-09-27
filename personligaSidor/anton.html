@@ -5,9 +5,10 @@
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>Document</title>
-   <link rel="stylesheet" href="/personligaSidor/anton.css" />
+   <link rel="stylesheet" href="/css/index.css"/>
    <link rel="stylesheet" href="/css/header.css" />
    <link rel="stylesheet" href="/css/footer.css" />
+   <link rel="stylesheet" href="anton.css" />
 
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
       rel="stylesheet" />
@@ -16,38 +17,68 @@
 </head>
 
 <body>
-   <header class="header">
-      <div class="row-top">
-         <div class="left-section">
-            <a href="/html/index.html"></a>
-            <img class="computer-logo" src="/resources/logo.png" />
-            COM|VUE|TER
+   <header>
+      <div class="header-container">
+         <div class="row-top">
+            <nav class="mobile-nav">
+                  <a href="/html/products.html">Våra produkter</a>
+                  <a href="/html/buildpc.html">Bygg din egen dator</a>
+                  <a href="/html/aboutus.html">Om oss</a>
+                  <a href="/html/policy.html">Policy</a>
+               </nav>
+               <button class="hamburger">
+                  <div class="bar"></div>
+               </button>
+            <div class="left-section">
+               <div class="logo-link">
+                  <a href="/html/index.html" class="logo-link">
+                     <img class="computer-logo" src="/resources/logo.png" />
+                     <div class="logo-text">COM|VUE|TER</div>
+                  </a>
+               </div>
+            </div>
+            
+            <div class="middle-section">
+               <div class="search-bar-container">
+                  <div class="search-button">
+                     <button type="submit" class="search-button-icon">
+                        <img src="/resources/search-icon-gray.png"/>
+                     </button>
+                  </div>
+                  <input class="search-bar" type="search" placeholder="Sök här" />
+               </div>
+            </div>
+            <div class="right-section">
+               <div class="shopping-cart-icon-container">
+                  <img
+                     class="shopping-cart-icon"
+                     src="/resources/shoppingcart.png"
+                  />
+                  <a href=""> Kundvagn</a>
+               </div>
+            </div>
          </div>
-         <div class="middle-section">
+         <div class="row-bottom">
             <div class="search-bar-container">
+               <div class="search-button">
+                  <button type="submit" class="search-button-icon">
+                     <img src="/resources/search-icon-gray.png"/>
+                  </button>
+               </div>
                <input class="search-bar" type="text" placeholder="Sök här" />
-               <img class="search-icon" src="/resources/magnifying-glass-solid.svg" />
             </div>
-         </div>
-         <div class="right-section">
-            <div class="shopping-cart-icon-container">
-               <img class="shopping-cart-icon" src="/resources/shoppingcart.svg" />
-               <a href=""> Kundvagn</a>
-            </div>
-         </div>
-      </div>
-      <div class="row-bottom">
-         <div class="top-menu-link">
-            <a href="/html/products.html">Våra produkter</a>
-         </div>
-         <div class="top-menu-link">
-            <a href="/html/buildpc.html">Bygg din egen dator</a>
-         </div>
-         <div class="top-menu-link">
-            <a href="/html/aboutus.html">Om oss</a>
-         </div>
-         <div class="top-menu-link">
-            <a href="/html/policy.html">Policy</a>
+               <div class="top-menu-link">
+                  <a href="/html/products.html">Våra produkter</a>
+               </div>
+               <div class="top-menu-link">
+                  <a href="/html/buildpc.html">Bygg din egen dator</a>
+               </div>
+               <div class="top-menu-link">
+                  <a href="/html/aboutus.html">Om oss</a>
+               </div>
+               <div class="top-menu-link">
+                  <a href="/html/policy.html">Policy</a>
+               </div>
          </div>
       </div>
    </header>
@@ -327,7 +358,11 @@
                Vi följer strikta riktlinjer för kvalitet och service. Vi
                respekterar dina rättigheter som kund och skyddar din
                integritet. <br /><br /><br /><br />
-               <a href="/html/policy.html"><span class="left-footer-link">Läs mer om vår policy</span></a>
+               <a href="/html/policy.html"
+                  ><span class="left-footer-link"
+                     >Läs mer om vår policy</span
+                  ></a
+               >
             </p>
          </div>
 
@@ -341,7 +376,9 @@
                senaste produkterna. Vi skapar inte bara datorer, vi
                förverkligar drömmar. <br />
                <br />
-               <a href="/html/aboutus.html"><span class="center-footer-link">Klicka här</span></a>
+               <a href="/html/aboutus.html"
+                  ><span class="center-footer-link">Klicka här</span></a
+               >
                för mer info om oss
             </p>
          </div>

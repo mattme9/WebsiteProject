@@ -1,3 +1,15 @@
+body {
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 130px;
+  
+   background: linear-gradient(to bottom, #242526, #1c364f);
+}
+
 .companyInfo {
    border: 1px solid white;
    margin: 0 auto; /* Centrera horisontellt */
@@ -32,7 +44,7 @@
 .employee {
    display: flex;
    align-items: center;
-   max-width: calc(50% - 2rem);
+   max-width: 300px;
    margin: 1rem;
    border: 1px solid rgb(237, 240, 241);
    padding: 1rem;
@@ -85,23 +97,3 @@
 .employeeButton:hover {
    background-color: #333;
 }
-
-
-@media (max-width: 768px) {
-   .companyInfo {
-      max-width: 90%;
-      padding: 1rem; /* minskat från 2rem */
-      margin: 1rem auto; /* lagt till vertikal marginal */
-   }
- 
-   .employee {
-      max-width: calc(100% - 2rem);
-      min-width: 15rem; /* minskat från 20rem */
-   }
- 
-   .employeeText {
-      min-width: 5rem; /* minskat från 10rem */
-      max-width: 15rem; /* minskat från 20rem */
-   }
- }
- 

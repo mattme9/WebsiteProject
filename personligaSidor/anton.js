@@ -57,10 +57,10 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // Array med attributnamn
-var attributeNames = ["attribute1", "attribute2", "attribute3"];
+var attributeNames = ["attribute1", "attribute2", "attribute3", "attribute4", "attribute5", "attribute6"];
 
 // Hämta alla circle-element
-var circles = document.querySelectorAll(".progress-ring_circle");
+var circles = document.querySelectorAll(".progress-ring__circle");
 
 // Loopa igenom elementen och sätt attributen
 for (var i = 0; i < circles.length; i++) {
@@ -74,3 +74,4 @@ for (var i = 0; i < circles.length; i++) {
     // Lägg till textelementet i cirkeln
     circle.appendChild(textElement);
 }
+

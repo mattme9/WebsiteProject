@@ -1,0 +1,38 @@
+[
+    {
+        "pid": 1,
+        "title": "Chatbot",
+        "customer": "ABC Electronics",
+        "description": "Implementerade en chatbot för att snabbt svara på kundförfrågningar, vilket ökade svarshastigheten och kundnöjdheten."
+    },
+    {
+        "pid": 2,
+        "title": "StarStay Hotels",
+        "customer": "Gäster på StarStay-hotell",
+        "description": "Införde ett lojalitetsprogram som belönade återkommande gäster med rabatter och förmåner, vilket ökade kundlojaliteten och antalet återkommande bokningar."
+    },
+    {
+        "pid": 3,
+        "title": "TechSolutions",
+        "customer": "Företag som anlitade TechSolutions",
+        "description": "Genomförde kundundersökningar och användarintervjuer för att förstå kunders behov och anpassade IT-lösningar, vilket ledde till ökad kundtillfredsställelse och mer anpassade projekt."
+    },
+    {
+        "pid": 4,
+        "title": "CloudEase",
+        "customer": "Abonnenter av CloudEase SaaS-produkter",
+        "description": "Uppgraderade användargränssnittet och förbättrade användarupplevelsen baserat på feedback från kunder, vilket resulterade i minskad avhopp och ökad användning."
+    },
+    {
+        "pid": 5,
+        "title": "TasteBites Restaurants",
+        "customer": "Restauranggäster på TasteBites",
+        "description": "Utvecklade en mobilapp för bekväm beställning och betalning, vilket förkortade väntetiden och ökade kundtillfredsställelsen vid restaurangbesök."
+    },
+    {
+        "pid": 6,
+        "title": "AutoTech Motors",
+        "customer": "Fordonsägare som servicade sina bilar på AutoTech-verkstäder",
+        "description": "Införde en onlinebokningsplattform för service och reparationer, vilket gav kunderna flexibilitet och minskade väntetider, resulterande i ökad kundnöjdhet och fler bokningar."
+    }
+]

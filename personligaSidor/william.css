@@ -1,11 +1,67 @@
+.header-container {
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+.footer-container {
+    border-top-width: 0.5px;
+    border-top-style: solid;
+    border-top-color: white;
+    padding-top: 30px;
+}
+
 body {
-    font-family: "Montserrat", sans-serif;
+    background-color: #0F1440;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+.skillbar-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
+    border-radius: 8px;
+    width: 150px;
+    padding: 20px 0;
+    background-color: #CEC5FF;
+    row-gap: 20px;
+}
+
+.skillbar-circle {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #CEC5FF;
+    background: conic-gradient(#8984EF 3.6deg, #ededed 0deg);
     display: flex;
-    justify-content: space-between;
-    padding-top: 130px;
-   
-    background: linear-gradient(to bottom, #242526, #1c364f);
- }
+    align-items: center;
+    justify-content: center;
+}
+
+.skillbar-circle::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #CEC5FF;   
+}
+
+.circle-value {
+    position: relative;
+    color: #894E9A;
+    font-size: 20px;
+}
+
+.skill-type-text {
+    color: #894E9A;
+    font-size: 20px;
+}

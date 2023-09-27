@@ -57,7 +57,7 @@ const app = Vue.createApp({
                     id:8,
                     name: 'Macintosh',
                     description: 'Veteran',
-                    image: 'bild',
+                    image: '/resources/products/macintosh.jpg',
                     price: '7999'
                 }
             ],

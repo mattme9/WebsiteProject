@@ -9,78 +9,78 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/products.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
-    
     <script defer src="/app.js"></script>
+    <script defer src="/script.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script defer src="/javascript/script.js"></script>
 </head>
 <div id="app">
 <body>
-    <header>
-        <div class="header-container">
-           <div class="row-top">
-              <nav class="mobile-nav">
-                    <a href="/html/products.html">Våra produkter</a>
-                    <a href="/html/buildpc.html">Bygg din egen dator</a>
-                    <a href="/html/aboutus.html">Om oss</a>
-                    <a href="/html/policy.html">Policy</a>
-                 </nav>
-                 <button class="hamburger">
-                    <div class="bar"></div>
-                 </button>
-              <div class="left-section">
-                 <div class="logo-link">
-                    <a href="/html/index.html" class="logo-link">
-                       <img class="computer-logo" src="/resources/logo.png" />
-                       <div class="logo-text">COM|VUE|TER</div>
-                    </a>
-                 </div>
-              </div>
-              
-              <div class="middle-section">
-                 <div class="search-bar-container">
-                    <div class="search-button">
-                       <button type="submit" class="search-button-icon">
-                          <img src="/resources/search-icon-gray.png"/>
-                       </button>
-                    </div>
-                    <input class="search-bar" type="search" placeholder="Sök här" />
-                 </div>
-              </div>
-              <div class="right-section">
-                 <div class="shopping-cart-icon-container">
-                    <img
-                       class="shopping-cart-icon"
-                       src="/resources/shoppingcart.png"
-                    />
-                    <a href=""> Kundvagn</a>
-                 </div>
-              </div>
-           </div>
-           <div class="row-bottom">
-              <div class="search-bar-container">
-                 <div class="search-button">
-                    <button type="submit" class="search-button-icon">
-                       <img src="/resources/search-icon-gray.png"/>
-                    </button>
-                 </div>
-                 <input class="search-bar" type="text" placeholder="Sök här" />
-              </div>
-                 <div class="top-menu-link">
-                    <a href="/html/products.html">Våra produkter</a>
-                 </div>
-                 <div class="top-menu-link">
-                    <a href="/html/buildpc.html">Bygg din egen dator</a>
-                 </div>
-                 <div class="top-menu-link">
-                    <a href="/html/aboutus.html">Om oss</a>
-                 </div>
-                 <div class="top-menu-link">
-                    <a href="/html/policy.html">Policy</a>
-                 </div>
-           </div>
-        </div>
-     </header>
+   <header>
+      <div class="header-container">
+         <div class="row-top">
+            <nav class="mobile-nav">
+                  <a href="/html/products.html">Våra produkter</a>
+                  <a href="/html/buildpc.html">Bygg din egen dator</a>
+                  <a href="/html/aboutus.html">Om oss</a>
+                  <a href="/html/policy.html">Policy</a>
+               </nav>
+               <button class="hamburger">
+                  <div class="bar"></div>
+               </button>
+            <div class="left-section">
+               <div class="logo-link">
+                  <a href="/html/index.html" class="logo-link">
+                     <img class="computer-logo" src="/resources/logo.png" />
+                     <div class="logo-text">COM|VUE|TER</div>
+                  </a>
+               </div>
+            </div>
+            
+            <div class="middle-section">
+               <div class="search-bar-container">
+                  <div class="search-button">
+                     <button type="submit" class="search-button-icon">
+                        <img src="/resources/search-icon-gray.png"/>
+                     </button>
+                  </div>
+                  <input class="search-bar" type="search" placeholder="Sök här" />
+               </div>
+            </div>
+            <div class="right-section">
+               <div class="shopping-cart-icon-container">
+                  {{cartCount}}
+                  <img
+                     class="shopping-cart-icon"
+                     src="/resources/shoppingcart.png"
+                  />
+                  <a href=""> Kundvagn</a>
+               </div>
+            </div>
+         </div>
+         <div class="row-bottom">
+            <div class="search-bar-container">
+               <div class="search-button">
+                  <button type="submit" class="search-button-icon">
+                     <img src="/resources/search-icon-gray.png"/>
+                  </button>
+               </div>
+               <input class="search-bar" type="text" placeholder="Sök här" />
+            </div>
+               <div class="top-menu-link">
+                  <a href="/html/products.html">Våra produkter</a>
+               </div>
+               <div class="top-menu-link">
+                  <a href="/html/buildpc.html">Bygg din egen dator</a>
+               </div>
+               <div class="top-menu-link">
+                  <a href="/html/aboutus.html">Om oss</a>
+               </div>
+               <div class="top-menu-link">
+                  <a href="/html/policy.html">Policy</a>
+               </div>
+         </div>
+      </div>
+   </header>
     <main>
             <div class="grid-container">
                 <div class="item" v-for="product in computer" :key='computer.id'>
@@ -101,13 +101,13 @@
                  ComVueTer strävar efter att ge bästa möjliga kundupplevelse.
                  Vi följer strikta riktlinjer för kvalitet och service. Vi
                  respekterar dina rättigheter som kund och skyddar din
-                 integritet. 
-              </p>   
-                 <a href="/html/policy.html"><span class="left-footer-link"
+                 integritet. <br /><br /><br /><br />
+                 <a href="/html/policy.html"
+                    ><span class="left-footer-link"
                        >Läs mer om vår policy</span
                     ></a
                  >
-              
+              </p>
            </div>
 
            <div class="center-footer">
@@ -119,12 +119,12 @@
                  Vårt expertteam levererar bästa möjliga kundupplevelse och de
                  senaste produkterna. Vi skapar inte bara datorer, vi
                  förverkligar drömmar. <br />
-              </p>
+                 <br />
                  <a href="/html/aboutus.html"
                     ><span class="center-footer-link">Klicka här</span></a
                  >
-                 <span>för mer info om oss</span>
-              
+                 för mer info om oss
+              </p>
            </div>
 
            <div class="right-footer">
@@ -133,12 +133,12 @@
                  Telefon: 123-123123 <br />
                  Email: info@comvueter.com <br />
                  Adress: Proceassorvägen 1337, Örebro <br />
-              </p>
+                 <br /><br /><br />
 
-                 <a href="#" id="contactForm"><span>Kontakta oss</span></a>
+                 <a href="#" id="contactForm">Kontakta oss</a>
 
                  <!-- Popup Formulär -->
-              
+              </p>
 
                  <div id="myPopup" class="popup">
                   <div class="popup-content">
@@ -169,5 +169,6 @@
            </div>
         </div>
      </footer>
+
 </body>
 </html> 

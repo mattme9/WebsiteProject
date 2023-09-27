@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+<<<<<<< HEAD
     justify-content: center;
     align-items: center;
     padding-top: 130px;
@@ -13,7 +14,7 @@ body {
     display:grid;
     grid-template-columns: 40em;
     grid-template-rows: 40em 40em 40em 40em 40em 40em;
-    gap: 50em;
+    gap: 40em;
     background-color: #1c364f;
  }
 
@@ -23,31 +24,43 @@ body {
     padding: 20px 0;
     font-size:30px;
  }
+ .item1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text within .aboutinfo */
+  }
+
+  .item7{
+    margin-bottom:100px;
+  }
 
  .aboutme-wrapper{
     width:fit-content;
-    position:absolute;
     transform: translate(-50%, -50%);
-    left:48%;
-    top:70%;
+    margin-top: 215px;
  }
 
 .aboutme-container{
-    width:100%;
     background-color:white;
     border-radius: 10px;
     box-shadow: 0 20px 30px rgba(0,0,0,0.2);
     padding: 1em 1em;
+    
 }
 
 .aboutme-container *{
     color:black;
     font-weight: 500;
 }
+
 .aboutinfo{
     display:block;
-    position:absolute;
-    width:45%;
+    position:relative;
+}
+
+.aboutinfo h3{
+    color:#719aee;
 }
 
 .aboutinfo p{
@@ -56,6 +69,9 @@ body {
 .details{
     width:100%;
     display:absolute;
+=======
+    display: flex;
+>>>>>>> 3151fcce56e3a7c0a718ce3fbbd41e96d08af240
     justify-content: space-between;
     font-size:0.7em;
 }
@@ -127,6 +143,7 @@ body {
     /* Justeringar kan göras här */
 }
 
+<<<<<<< Updated upstream
 /*
     display: flex;
     justify-content: space-between;
@@ -135,3 +152,97 @@ body {
     background: linear-gradient(to bottom, #242526, #1c364f);
  }
  */
+=======
+.expanding.box.expanded{
+    transform: scale(1.1);
+}
+
+.description{
+    opacity:0;
+    transform: translateY(20px);
+    transition: opacity 0.5 ease, transform 0.5s ease;
+}
+
+.description-animation{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.description p{
+    text-align: center;
+    font-size:0.8em;
+}
+
+.title{
+    margin-top:2em;
+    font-family:'Quicksand',sans-serif;
+}
+
+.customer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:italic;
+    color:#719aee;
+    margin-bottom:1em;
+}
+<<<<<<< HEAD
+
+.title, .customer{
+    opacity:0;
+    transition: opacity 3s ease;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+
+@media (max-width:400px) {
+    
+
+    .grid-container{
+        grid-template-columns:auto;
+        gap:20px;
+        padding:10px;
+    }
+
+    .grid-container > div {
+        font-size:20px;
+        border-radius:5px;
+    }
+
+    .expanding.box.expanded{
+        transform:scale(1.0);
+    }
+    
+    .aboutme-wrapper{
+        margin-left:180px;
+    }
+
+    .footer-container {
+        display: block;
+        align-items: center;
+     }
+     .left-footer,
+     .center-footer,
+     .right-footer {
+        padding: 20px 0;
+     }
+     .left-footer h2,
+     .center-footer h2,
+     .right-footer h2{
+        font-size: 35px;
+     }
+     .left-footer span,
+     .center-footer span,
+     .right-footer span{
+        font-size: 25px;
+     }
+     
+     .footer-container p {
+        display: none;
+     }
+  
+}
+=======
+>>>>>>> 3151fcce56e3a7c0a718ce3fbbd41e96d08af240
+>>>>>>> Stashed changes

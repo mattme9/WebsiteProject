@@ -145,7 +145,4 @@ body {
     .skill progress {
         transition: all 0.3s ease-in-out; /* Uppdaterad transition för mobila enheter */
     }
-
-    /* kommentar */
 }
-    

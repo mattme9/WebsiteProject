@@ -1,34 +1,7 @@
-const jsonfile = 'daniel.json';
-var projects = [];
-
-fetch(jsonfile)
-    .then(response => {
-        if (!response.ok) {
-            throw new Error("JSON could not be loaded.");
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log(data);
-        data.forEach(item => {
-            console.log(`Name: ${item.title}`);
-            projects.push(item);
-        });
-        fillTitles();
-    })
-    .catch(error => {
-        console.error('Error', error);
-    });
-
-    function fillTitles(){
-        for (let i = 0; i < projects.length; i++) {
-            document.getElementById('title' + (i + 1)).innerHTML = projects[i].title;
-            document.getElementById('description' + (i + 1)).innerHTML = projects[i].description;
-        }
-    }
+// Denna kod körs när HTML-dokumentet är helt laddat och klart att användas
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Hantera färdighetssektionenaa
+    // Hantera färdighetssektionen
     let skills = document.querySelectorAll(".skill progress");
  
     // Loopa igenom varje färdighetsmätare

@@ -1,4 +1,3 @@
-
 .footer-container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -8,52 +7,41 @@
    left: 0;
    padding-top: 25px;
    gap: 2px;
-
    background-color: rgb(15, 20, 64);
    text-align: center;
    border-top-width: 0.5px;
    border-top-style: solid;
    border-top-color: white;
 }
-
 .footer-container p {
    text-align: left;
-   padding-left: 1rem;
-   padding-top: 0.5rem;
+   padding: 0.5rem 1rem 2rem 1rem;
 }
-
 .left-footer-link {
    text-decoration: underline;
 }
-
 .left-footer-link:hover {
    color: slategrey;
 }
-
 .center-footer-link {
    text-decoration: underline;
 }
-
 .center-footer-link:hover {
    color: slategrey;
 }
-
 .socials {
    justify-content: center;
    display: flex;
    padding: 20px 0;
 }
-
 .socials img {
    height: 35px;
    width: auto;
 }
-
 .socials img:hover {
    cursor: pointer;
    opacity: 0.8;
 }
-
  .popup {
    display: none;
    position: fixed;
@@ -67,24 +55,80 @@
    background-color: rgb(0, 0, 0);
    background-color: rgba(0, 0, 0, 0.4);
 }
-
  /* Modal Content */
 .popup-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
- }
- 
- /* Lägg till dessa regler för att ändra textfärg i popup-fönstret */
- .popup-content input[type="text"],
- .popup-content textarea {
-    color: black; /* Ändra till önskad textfärg, här är det svart */
- }
- 
- /* Lägg till dessa regler för att ändra textfärg i popup-fönstret */
- .popup-content input[type="text"],
- .popup-content label {
-    color: black; /* Ändra till önskad textfärg, här är det svart */
- }
+   background-color: #242526;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+}
+/* Lägg till dessa regler för att ändra textfärg i popup-fönstret */
+.popup-content input[type="text"],
+.popup-content textarea {
+   color: black; /* Ändra till önskad textfärg, här är det svart */
+}
+/* Lägg till dessa regler för att ändra textfärg i popup-fönstret */
+.popup-content input[type="text"],
+.popup-content label {
+   color: black; /* Ändra till önskad textfärg, här är det svart */
+}
+/* Ändra textfärgen på etiketterna till vit */
+.popup-content label {
+   color: white;
+}
+/* Ändra bredden på alla textfält till dubbelt så bred */
+.popup-content input[type="text"],
+.popup-content textarea {
+   width: 20%; /* Ändra till önskad bredd */
+}
+/* Ändra höjden på textfältet till tre gånger så hög */
+.popup-content textarea {
+   height: 3em; /* Ändra till önskad höjd */
+}
+/* Lägg till denna CSS-regel för att ändra utseendet på "Skicka"-knappen */
+.submitButton {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   width: 20%;
+   height: 3rem;
+   margin-top: 1rem;
+   margin-right: 1rem;
+   margin-left: 1rem;
+   background-color: #303233;
+   color: #e1e1e1;
+   font-weight:600;
+   border: 0;
+}
+.submitButton:hover {
+   cursor: pointer;
+   opacity: 0.5;
+}
+@media screen and (max-width: 390px) and (max-width: 635px) {
+   .footer-container {
+      display: block;
+      align-items: center;
+   }
+   .left-footer,
+   .center-footer,
+   .right-footer {
+      padding: 20px 0;
+   }
+   .left-footer h2,
+   .center-footer h2,
+   .right-footer h2{
+      font-size: 35px;
+   }
+   .left-footer span,
+   .center-footer span,
+   .right-footer span{
+      font-size: 25px;
+   }
+   
+   .footer-container p {
+      display: none;
+   }
+}
+

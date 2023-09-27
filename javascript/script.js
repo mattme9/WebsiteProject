@@ -1,3 +1,11 @@
+const menuBtn = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-nav');
+
+menuBtn.addEventListener('click', function() {
+   menuBtn.classList.toggle('is-active');
+   mobileMenu.classList.toggle('is-active');
+});
+
 let sIndex = 1;
 showSlides(sIndex);
 
@@ -85,14 +93,6 @@ phoneField.addEventListener('input', function (event) {
    }
 });
 
-const menuBtn = document.querySelector('.hamburger');
-const mobileMenu = document.querySelector('.mobile-nav');
-
-menuBtn.addEventListener('click', function() {
-   menuBtn.classList.toggle('is-active');
-   mobileMenu.classList.toggle('is-active');
-});
-
 // Lägg till en lyssnare för submit-händelsen på formuläret
 form.addEventListener('submit', function (event) {
    // Om formuläret inte är giltigt, förhindra att det skickas
@@ -103,4 +103,5 @@ form.addEventListener('submit', function (event) {
 
    form.classList.add('was-validated');
 });
+
 

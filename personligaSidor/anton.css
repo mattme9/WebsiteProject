@@ -1,13 +1,6 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 130px;
-    background: linear-gradient(to bottom, #242526, #1c364f);
- }
+   display: inline-block;
+}
 
  .companyInfo {
     border: 1px solid white;
@@ -32,8 +25,8 @@ body {
     line-height: 30px;
  }
 
- .attributes {
-    border: 1px solid grey;
+ .attributes { 
+   border: 2px solid grey;
     margin: 0 auto;
     text-align: center;
     max-width: 70%;
@@ -56,8 +49,11 @@ body {
  }
 
  .circle-container {
-    display: flex;
+    display: grid;
+    place-items: center;
     justify-content: space-around;
+    padding-top: 1rem;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .circle-container svg {
@@ -65,7 +61,7 @@ body {
 }
 
 .attributeNames {
-    display: flex;
+    display: grid;
     justify-content: space-around;
 }
 
@@ -83,7 +79,7 @@ body {
 }
 
 .nvidia, .mount, .coding {
-    border: 1px solid white;
+    border: 2px solid white;
     margin: 0 auto; /* Centrera horisontellt */
     text-align: center; /* Centrera texten */
     max-width: 70%; /* Max bredd 70% av förälderelementet */
@@ -95,7 +91,7 @@ body {
  }
 
  .amd, .troubleshooting {
-    border: 1px solid grey;
+    border: 2px solid grey;
     margin: 0 auto; /* Centrera horisontellt */
     text-align: center; /* Centrera texten */
     max-width: 70%; /* Max bredd 70% av förälderelementet */
@@ -150,4 +146,38 @@ body {
 /* Lägg till animationen till alla element med klassen 'roll' */
 body.roll {
    animation: roll 2s ease;
+}
+@media screen and (max-width:1035px) {
+   .circle-container {
+     grid-template-columns: repeat(3, 1fr); 
+     
+   } 
+   .attributeNames {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .attributeNames h2 {
+      min-width: auto;
+      text-align: center;
+      padding-top: 1rem;
+   }
+}
+
+@media screen and (max-width: 665px) {
+   .circle-container {
+     grid-template-columns: repeat(2, 1fr); 
+   } 
+   .attributeNames {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+   .attributeNames h2 {
+      min-width: auto;
+      text-align: center;
+      padding-top: 1rem;
+   }
 }

@@ -3,7 +3,7 @@ window.onload = function() {
     // Hämta alla element med klassnamnet 'progress-ring__circle'. Dessa element representerar cirkelformade framstegsindikatorer på sidan.
     var circles = document.getElementsByClassName('progress-ring__circle');
     // Definiera en array med procentvärden för varje cirkel. Varje värde representerar hur mycket av cirkeln som ska fyllas.
-    var percentages = [50, 45, 75, 60, 80]; // Ändra detta till den procentsats du vill ha för varje cirkel
+    var percentages = [50, 45, 75, 60, 80, 75]; // Ändra detta till den procentsats du vill ha för varje cirkel
     // Loopa igenom alla cirkel-element
     for (var i = 0; i < circles.length; i++) {
         // Hämta procentvärdet för den aktuella cirkeln
@@ -55,3 +55,22 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// Array med attributnamn
+var attributeNames = ["attribute1", "attribute2", "attribute3"];
+
+// Hämta alla circle-element
+var circles = document.querySelectorAll(".progress-ring_circle");
+
+// Loopa igenom elementen och sätt attributen
+for (var i = 0; i < circles.length; i++) {
+    var circle = circles[i];
+    var attributeName = attributeNames[i];
+    
+    // Skapa ett textelement och sätt attributnamnet som text
+    var textElement = document.createElement("div");
+    textElement.innerText = attributeName;
+    
+    // Lägg till textelementet i cirkeln
+    circle.appendChild(textElement);
+}

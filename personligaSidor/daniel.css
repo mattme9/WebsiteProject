@@ -1,148 +1,147 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
-    padding-top: 130px;
-    background: linear-gradient(to bottom, #6f7275, #4e2276, #8c45cf);
-    line-height: 25px;
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   justify-content: space-between;
+   padding-top: 130px;
+   background: linear-gradient(to bottom, #6f7275, #4e2276, #8c45cf);
+   line-height: 25px;
 }
 
 .personal-container {
-    border: 1px solid white;
-    margin: 0 auto;
-    text-align: center;
-    max-width: calc(80%);
-    max-height: auto;
-    margin-top: 2rem;
-    padding:1rem;
-    margin-bottom: 5rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   border: 1px solid white;
+   margin: 0 auto;
+   text-align: center;
+   max-width: calc(80%);
+   max-height: auto;
+   margin-top: 2rem;
+   padding: 1rem;
+   margin-bottom: 5rem;
+   border-radius: 1rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .personal-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .personal-text {
-    max-width: 50rem;
-    border: 1px solid white;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-sizing: border-box;
-    text-align: left;
-    margin-top: 1rem;
-    margin-left: 1rem;
+   max-width: 50rem;
+   border: 1px solid white;
+   padding: 1rem;
+   border-radius: 1rem;
+   box-sizing: border-box;
+   text-align: left;
+   margin-top: 1rem;
+   margin-left: 1rem;
 }
 
 .personal-photo {
-    width: 20%;
-    max-height: 20%;
-    object-fit: cover;
+   width: 20%;
+   max-height: 20%;
+   object-fit: cover;
 }
 
 .skill-container {
-    width: 50%;
-    margin: auto;
-    padding: 20px;
-    margin-bottom: 1rem;
-    text-align:center;
+   width: 50%;
+   margin: auto;
+   padding: 20px;
+   margin-bottom: 1rem;
+   text-align: center;
 }
 
 .skill-container h1 {
-    margin-bottom: 2rem;
+   margin-bottom: 2rem;
 }
 
 .skill {
-    margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .skill label {
-    display: block;
+   display: block;
 }
 
 .skill progress {
-    width: 100%;
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    appearance: none;
-    
+   width: 100%;
+   height: 30px;
+   border: none;
+   border-radius: 5px;
+   appearance: none;
 }
 
 .progress-container {
-    position: relative;
-    height: 30px;
+   position: relative;
+   height: 30px;
 }
 
 .progress-text {
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translate(0%, -50%);
-    font-weight: bold;
-    color: black;
-    font-size: 16px;
+   position: absolute;
+   top: 50%;
+   right: 1rem;
+   transform: translate(0%, -50%);
+   font-weight: bold;
+   color: black;
+   font-size: 16px;
 }
 
 .project-container {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    margin-bottom: 10rem;
-    border: 1px solid white;
-    border-radius: 1rem;
+   width: 60%;
+   margin: auto;
+   text-align: center;
+   margin-bottom: 10rem;
+   border: 1px solid white;
+   border-radius: 1rem;
 }
 
 .project-container h1 {
-    padding-top: 1rem;
+   padding-top: 1rem;
 }
 
 .project {
-    margin: 1rem;
-    padding:1rem;
+   margin: 1rem;
+   padding: 1rem;
 }
 
 .project-container {
-    opacity: 0;
-    transition: opacity 0.5s ease;
+   opacity: 0;
+   transition: opacity 0.5s ease;
 }
 
 .project-container.show {
-    opacity: 1;
+   opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
-    .personal-container {
-        max-width: 90%;
-    }
+   .personal-container {
+      max-width: 90%;
+   }
 
-    .personal-text {
-        max-width: 100%;
-        margin-left: 0;
-    }
+   .personal-text {
+      max-width: 100%;
+      margin-left: 0;
+   }
 
-    .personal-photo {
-        width: 50%;
-        max-height: 50%;
-    }
+   .personal-photo {
+      width: 50%;
+      max-height: 50%;
+   }
 
-    .skill-container {
-        width: 80%;
-    }
+   .skill-container {
+      width: 80%;
+   }
 
-    .project-container {
-        width: 80%;
-    }
+   .project-container {
+      width: 80%;
+   }
 
-    .skill progress {
-        transition: all 0.3s ease-in-out; /* Uppdaterad transition för mobila enheter */
-    }
+   .skill progress {
+      transition: all 0.3s ease-in-out; /* Uppdaterad transition för mobila enheter */
+   }
 }

@@ -2,62 +2,62 @@ body {
    display: inline-block;
 }
 
- .companyInfo {
-    border: 1px solid white;
-    margin: 0 auto; /* Centrera horisontellt */
-    text-align: center; /* Centrera texten */
-    max-width: 70%; /* Max bredd 70% av förälderelementet */
-    margin-top: 5rem;
-    padding: 2rem;
-    margin-bottom: 5rem;
-    width: 100%; /* Fyll tillgängligt utrymme */
-    border-radius: 4rem;
- }
- 
- .companyInfo h1 {
-    padding: 2rem;
-    text-decoration: underline;
-    text-transform: uppercase;
- }
- 
- .companyInfo p {
-    padding: 2rem;
-    line-height: 30px;
- }
+.companyInfo {
+   border: 1px solid white;
+   margin: 0 auto; /* Centrera horisontellt */
+   text-align: center; /* Centrera texten */
+   max-width: 70%; /* Max bredd 70% av förälderelementet */
+   margin-top: 5rem;
+   padding: 2rem;
+   margin-bottom: 5rem;
+   width: 100%; /* Fyll tillgängligt utrymme */
+   border-radius: 4rem;
+   align-items: center;
+}
 
- .attributes { 
+.companyInfo h1 {
+   padding: 2rem;
+   text-decoration: underline;
+   text-transform: uppercase;
+}
+
+.companyInfo p {
+   padding: 2rem;
+   line-height: 30px;
+}
+
+.attributes {
    border: 2px solid grey;
-    margin: 0 auto;
-    text-align: center;
-    max-width: 70%;
-    margin-top: 5rem;
-    padding: 2rem;
-    margin-bottom: 5rem;
-    width: 100%;
-    border-radius: 4rem;
- }
+   margin: 0 auto;
+   text-align: center;
+   max-width: 70%;
+   margin-top: 5rem;
+   padding: 2rem;
+   margin-bottom: 5rem;
+   width: 100%;
+   border-radius: 4rem;
+}
 
+.attributes h1 {
+   padding: 2rem;
+   text-transform: uppercase;
+}
 
- .attributes h1 {
-    padding: 2rem;
-    text-transform: uppercase;
- }
+.attributes p {
+   padding: 2rem;
+   line-height: 1.5;
+}
 
- .attributes p {
-    padding: 2rem;
-    line-height: 1.5;
- }
-
- .circle-container {
-    display: grid;
-    place-items: center;
-    justify-content: space-around;
-    padding-top: 1rem;
-    grid-template-columns: repeat(6, 1fr);
+.circle-container {
+   display: grid;
+   place-items: center;
+   justify-content: space-around;
+   padding-top: 1rem;
+   grid-template-columns: repeat(6, 1fr);
 }
 
 .circle-container svg {
-    width: 120px; /* Lägg till en fast bredd här */
+   width: 120px; /* Lägg till en fast bredd här */
 }
 
 .attributeNames {
@@ -72,48 +72,66 @@ body {
 }
 
 .progress-ring__circle {
-    transform: rotate(-90deg);
-    transform-origin: 50% 50%;
-    stroke-dasharray: 365;
-    stroke-dashoffset: 365;
+   transform: rotate(-90deg);
+   transform-origin: 50% 50%;
+   stroke-dasharray: 365;
+   stroke-dashoffset: 365;
 }
 
-.nvidia, .mount, .coding {
-    border: 2px solid white;
-    margin: 0 auto; /* Centrera horisontellt */
-    text-align: center; /* Centrera texten */
-    max-width: 70%; /* Max bredd 70% av förälderelementet */
-    margin-top: 5rem;
-    padding: 2rem;
-    margin-bottom: 5rem;
-    width: 100%; /* Fyll tillgängligt utrymme */
-    border-radius: 4rem;
- }
-
- .amd, .troubleshooting, .item5 {
-    border: 2px solid grey;
-    margin: 0 auto; /* Centrera horisontellt */
-    text-align: center; /* Centrera texten */
-    max-width: 70%; /* Max bredd 70% av förälderelementet */
-    margin-top: 5rem;
-    padding: 2rem;
-    margin-bottom: 5rem;
-    width: 100%; /* Fyll tillgängligt utrymme */
-    border-radius: 4rem;
- }
- 
- .nvidia h1, .amd h1, .mount h1, .troubleshooting h1, .coding h1, .item5 h1 {
-    padding: 2rem;
-    text-decoration: underline;
-    text-transform: uppercase;
+.nvidia,
+.mount,
+.coding {
+   border: 2px solid white;
+   margin: 0 auto; /* Centrera horisontellt */
+   text-align: center; /* Centrera texten */
+   max-width: 70%; /* Max bredd 70% av förälderelementet */
+   margin-top: 5rem;
+   padding: 2rem;
+   margin-bottom: 5rem;
+   width: 100%; /* Fyll tillgängligt utrymme */
+   border-radius: 4rem;
 }
 
-.nvidia p, .amd p, .mount p, .troubleshooting p, .coding p, .item5 p {
-    padding: 2rem;
-    line-height: 30px;
+.amd,
+.troubleshooting,
+.item5 {
+   border: 2px solid grey;
+   margin: 0 auto; /* Centrera horisontellt */
+   text-align: center; /* Centrera texten */
+   max-width: 70%; /* Max bredd 70% av förälderelementet */
+   margin-top: 5rem;
+   padding: 2rem;
+   margin-bottom: 5rem;
+   width: 100%; /* Fyll tillgängligt utrymme */
+   border-radius: 4rem;
 }
 
-.nvidia li, .amd li, .mount li, .troubleshooting li, .coding li {
+.nvidia h1,
+.amd h1,
+.mount h1,
+.troubleshooting h1,
+.coding h1,
+.item5 h1 {
+   padding: 2rem;
+   text-decoration: underline;
+   text-transform: uppercase;
+}
+
+.nvidia p,
+.amd p,
+.mount p,
+.troubleshooting p,
+.coding p,
+.item5 p {
+   padding: 2rem;
+   line-height: 30px;
+}
+
+.nvidia li,
+.amd li,
+.mount li,
+.troubleshooting li,
+.coding li {
    padding: 2rem;
    line-height: 30px;
 }
@@ -126,7 +144,7 @@ body {
 #troubleshooting,
 #coding,
 #item5 {
-    transition: all 0.5s ease;
+   transition: all 0.5s ease;
 }
 
 .attributeNames h2:hover,
@@ -136,24 +154,31 @@ body {
 #troubleshooting:hover,
 #coding:hover,
 #item5:hover {
-    transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+img {
+   width: 20%;
 }
 
 /* Definiera en keyframes-animation som roterar ett element 360 grader */
 @keyframes roll {
-   from { transform: rotate(0deg); }
-   to { transform: rotate(360deg); }
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
 }
 
 /* Lägg till animationen till alla element med klassen 'roll' */
 body.roll {
    animation: roll 2s ease;
 }
-@media screen and (max-width:1035px) {
+@media screen and (max-width: 1035px) {
    .circle-container {
-     grid-template-columns: repeat(3, 1fr); 
-     
-   } 
+      grid-template-columns: repeat(3, 1fr);
+   }
    .attributeNames {
       display: flex;
       flex-direction: column;
@@ -172,8 +197,8 @@ body.roll {
 
 @media screen and (max-width: 665px) {
    .circle-container {
-     grid-template-columns: repeat(2, 1fr); 
-   } 
+      grid-template-columns: repeat(2, 1fr);
+   }
    .attributeNames {
       display: flex;
       flex-direction: column;

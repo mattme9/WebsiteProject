@@ -1,36 +1,36 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    padding-top: 130px;
-    background: linear-gradient(to bottom, #242526, #1c364f);
- }
-
- .grid-container{
-    display:grid;
-    grid-template-columns: 40em;
-    grid-template-rows: 40em 40em 40em 40em 40em 40em;
-    gap: 50em;
-    background-color: #1c364f;
- }
-
- .grid-container > div {
-    background-color: rgb(119, 129, 129);
-    text-align:center;
-    padding: 20px 0;
-    font-size:30px;
- }
-
- .aboutme-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   justify-content: center;
+   align-items: center;
+   padding-top: 130px;
+   background: linear-gradient(to bottom, #242526, #1c364f);
 }
 
-    /*
+.grid-container {
+   display: grid;
+   grid-template-columns: 40em;
+   grid-template-rows: 40em 40em 40em 40em 40em 40em;
+   gap: 50em;
+   background-color: #1c364f;
+}
+
+.grid-container > div {
+   background-color: rgb(119, 129, 129);
+   text-align: center;
+   padding: 20px 0;
+   font-size: 30px;
+}
+
+.aboutme-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/*
     width:fit-content;
     position:absolute;
     transform: translate(-50%, -50%);
@@ -38,163 +38,160 @@ body {
     top:70%;
     */
 
-.aboutme-container{
-    width:100%;
-    background-color:white;
-    border-radius: 10px;
-    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
-    padding: 1em 1em;
-    text-align: center;
+.aboutme-container {
+   width: 100%;
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+   padding: 1em 1em;
+   text-align: center;
 }
 
-.aboutme-container *{
-    color:black;
-    font-weight: 500;
+.aboutme-container * {
+   color: black;
+   font-weight: 500;
 }
-.aboutinfo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.aboutinfo p{
-    font-size:0.6em;
-    text-align:center;
-}
-.details{
-    width:100%;
-    display:absolute;
-    justify-content: space-between;
-    font-size:0.7em;
+.aboutinfo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
 }
 
-.bar{
-    position:relative;
-    border:2px solid #0d96e0;
-    border-radius:20px;
-    margin-bottom:0.2em;
+.aboutinfo p {
+   font-size: 0.6em;
+   text-align: center;
+}
+.details {
+   width: 100%;
+   display: absolute;
+   justify-content: space-between;
+   font-size: 0.7em;
 }
 
-.bar div{
-    position:relative;
-    width:0;
-    height:15px;
-    border-radius:5px;
-    background-color:#e0dc0d;
+.bar {
+   position: relative;
+   border: 2px solid #0d96e0;
+   border-radius: 20px;
+   margin-bottom: 0.2em;
 }
 
-#photoshop-bar{
-    animation: photoshop-bar 2s forwards;
-}
-@keyframes photoshop-bar{
-    100% {
-        width:70%
-    }
-}
-
-#javascript-bar{
-    animation: javascript-bar 2s forwards;
-}
-@keyframes javascript-bar{
-    100% {
-        width:80%
-    }
+.bar div {
+   position: relative;
+   width: 0;
+   height: 15px;
+   border-radius: 5px;
+   background-color: #e0dc0d;
 }
 
-#vue-bar{
-    animation: vue-bar 2s forwards;
+#photoshop-bar {
+   animation: photoshop-bar 2s forwards;
 }
-@keyframes vue-bar{
-    100% {
-        width:65%
-    }
-}
-
-#laptop-bar{
-    animation: laptop-bar 2s forwards;
-}
-@keyframes laptop-bar{
-    100% {
-        width:90%
-    }
+@keyframes photoshop-bar {
+   100% {
+      width: 70%;
+   }
 }
 
-#service-bar{
-    animation: service-bar 2s forwards;
+#javascript-bar {
+   animation: javascript-bar 2s forwards;
 }
-@keyframes service-bar{
-    100% {
-        width:100%
-    }
-}
-
-.expanding.box{
-    transition: transform 2s ease;
+@keyframes javascript-bar {
+   100% {
+      width: 80%;
+   }
 }
 
-.expanding.box.expanded{
-    transform: scale(1.1);
+#vue-bar {
+   animation: vue-bar 2s forwards;
+}
+@keyframes vue-bar {
+   100% {
+      width: 65%;
+   }
 }
 
-.description{
-    opacity:0;
-    transform: translateY(20px);
-    transition: opacity 0.5 ease, transform 0.5s ease;
+#laptop-bar {
+   animation: laptop-bar 2s forwards;
+}
+@keyframes laptop-bar {
+   100% {
+      width: 90%;
+   }
 }
 
-.description-animation{
-    opacity: 1;
-    transform: translateY(0);
+#service-bar {
+   animation: service-bar 2s forwards;
+}
+@keyframes service-bar {
+   100% {
+      width: 100%;
+   }
 }
 
-.description p{
-    text-align: center;
-    font-size:0.8em;
+.expanding.box {
+   transition: transform 2s ease;
 }
 
-.title{
-    margin-top:2em;
-    font-family:'Quicksand',sans-serif;
+.expanding.box.expanded {
+   transform: scale(1.1);
 }
 
-.customer{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-style:italic;
-    color:#719aee;
-    margin-bottom:1em;
+.description {
+   opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.5 ease, transform 0.5s ease;
+}
+
+.description-animation {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.description p {
+   text-align: center;
+   font-size: 0.8em;
+}
+
+.title {
+   margin-top: 2em;
+   font-family: "Quicksand", sans-serif;
+}
+
+.customer {
+   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+   font-style: italic;
+   color: #719aee;
+   margin-bottom: 1em;
 }
 
 .title,
 .customer {
-    opacity: 0;
-    transition: opacity 2s ease;
+   opacity: 0;
+   transition: opacity 2s ease;
 }
 
 .fade-in {
-    opacity: 1;
+   opacity: 1;
 }
 
 @media (max-width: 768px) {
-    body {
-        padding-top: 130px;
-        font-size:20px;
-    }
-    .item1{
-        transform: scale(0.95);
-    }
+   body {
+      padding-top: 130px;
+      font-size: 20px;
+   }
+   .item1 {
+      transform: scale(0.95);
+   }
 
-    .grid-container {
-        grid-template-columns: 1fr; /* Full-width columns */
-        gap: 20px; /* Reduce the gap between items */
-    }
+   .grid-container {
+      grid-template-columns: 1fr; /* Full-width columns */
+      gap: 20px; /* Reduce the gap between items */
+   }
 
-    .expanding.box.expanded{
-        transform:scale(0.9);
-    }
+   .expanding.box.expanded {
+      transform: scale(0.9);
+   }
 }
-
-
-
-

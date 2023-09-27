@@ -16,12 +16,12 @@ a {
    text-decoration: none;
 }
 
-.slide-container{
-   max-width:1000px;
-   position:relative;
+.slide-container {
+   max-width: 1000px;
+   position: relative;
    justify-content: center;
    margin: 0 auto;
-   margin-top:10px;
+   margin-top: 10px;
 }
 
 .slide {
@@ -29,18 +29,18 @@ a {
    align-items: center;
    justify-content: center;
    text-align: center;
-   width:100%;
+   width: 100%;
 }
 
-.slide img{
-   max-width:100%;
-   max-height:100%;
+.slide img {
+   max-width: 100%;
+   max-height: 100%;
    width: 370px;
    height: 300px;
    margin: 0 auto;
-   display:block;
+   display: block;
 }
-.prev .next{
+.prev .next {
    cursor: pointer;
    position: absolute;
    top: 50%;
@@ -59,16 +59,17 @@ a {
    text-align: center;
 }
 
-.next{
-   right:0;
+.next {
+   right: 0;
    border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover{
-   background-color:gray;
+.prev:hover,
+.next:hover {
+   background-color: gray;
 }
 
-.text{
+.text {
    color: #f2f2f2;
    font-size: 15px;
    padding: 8px 12px;
@@ -78,7 +79,7 @@ a {
    text-align: center;
 }
 
-.numberText{
+.numberText {
    color: #41a9ee;
    font-size: 12px;
    padding: 8px 12px;
@@ -95,24 +96,29 @@ a {
    border-radius: 50%;
    display: inline-block;
    transition: background-color 0.6s ease;
- }
- 
- .active, .dot:hover {
-   background-color: #717171;
- }
+}
 
- .fade {
+.active,
+.dot:hover {
+   background-color: #717171;
+}
+
+.fade {
    animation-name: fade;
    animation-duration: 1.5s;
- }
- 
- @keyframes fade {
-   from {opacity: .4}
-   to {opacity: 1}
- }
+}
 
- .about-container{
-   position:relative;
-   width:100%;
-   background-color:#41a9ee;
+@keyframes fade {
+   from {
+      opacity: 0.4;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.about-container {
+   position: relative;
+   width: 100%;
+   background-color: #41a9ee;
 }

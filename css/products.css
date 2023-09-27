@@ -1,52 +1,52 @@
-.grid-container{
-   margin-top:1em;
-   display:grid;
+.grid-container {
+   margin-top: 1em;
+   display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   grid-template-rows:300px 300px 300px;
-   gap:0.5em;
+   grid-template-rows: 300px 300px 300px;
+   gap: 0.5em;
    justify-content: center;
-   background-color:#242526;
+   background-color: #242526;
 }
 
-.grid-container > div{
- text-align: center;
- padding: 15px 0;
- font-size: 30px;
- background-color: rgba(95, 104, 118, 0.472);
- border-radius:20px;
- border-style:groove;
+.grid-container > div {
+   text-align: center;
+   padding: 15px 0;
+   font-size: 30px;
+   background-color: rgba(95, 104, 118, 0.472);
+   border-radius: 20px;
+   border-style: groove;
 }
 
-.item h2{
+.item h2 {
    font-size: 1em;
 }
 
-#txtPrice{
-   margin-top:2em;
-   color:black;
+#txtPrice {
+   margin-top: 2em;
+   color: black;
 }
 
-#txtPrice span{
+#txtPrice span {
    font-size: 2em;
 }
 
-.item p{
+.item p {
    font-size: 0.5em;
 }
 
-.item button{
-   padding:8px;
-   color:black;
-   background-color:white;
-   border-radius:10px;
-   border-style:double;
+.item button {
+   padding: 8px;
+   color: black;
+   background-color: white;
+   border-radius: 10px;
+   border-style: double;
 }
 
-.item button:hover{
-   background-color:burlywood;
+.item button:hover {
+   background-color: burlywood;
 }
 
-.item img{
-   width:150px;
-   height:100px;
+.item img {
+   width: 150px;
+   height: 100px;
 }

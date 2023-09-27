@@ -1,12 +1,11 @@
+main {
+   width: 100%;
+   padding-top: 130px;
+   background-color: #242526;
+   flex: 1;
+}
 
- main {
-    width: 100%;
-    padding-top: 130px;
-    background-color: #242526;
-    flex: 1;
- }
-
- body {
+body {
    font-family: "Montserrat", sans-serif;
 
    display: flex;
@@ -16,7 +15,7 @@
    background-color: #242526;
 }
 
- .pcbuildersection {
+.pcbuildersection {
    display: flex;
    justify-content: space-between;
    padding-top: 1rem;
@@ -39,11 +38,13 @@
    margin-bottom: 12px;
 }
 
-.summaryTitle, .summaryTotal {
+.summaryTitle,
+.summaryTotal {
    color: #e1e1e1;
 }
 
-.summaryTitle, .summaryTotal {
+.summaryTitle,
+.summaryTotal {
    text-align: center;
 }
 
@@ -82,9 +83,8 @@
    padding-left: 10px;
    background-color: #303233;
    color: #e1e1e1;
-   font-weight:600;
+   font-weight: 600;
    border: 0;
-
 }
 
 .left-flex-button img {
@@ -117,10 +117,10 @@
 }
 
 .innerFlexBox {
-  margin: 20px 60px;
-  height:100%;
-  max-width: 100%;
-  word-wrap: break-word;
+   margin: 20px 60px;
+   height: 100%;
+   max-width: 100%;
+   word-wrap: break-word;
 }
 
 .innerFlexBox h2 {
@@ -128,7 +128,7 @@
    text-transform: uppercase;
    font-weight: bolder;
    padding-bottom: 25px;
- }
+}
 
 .innerFlexBox p {
    text-align: left;
@@ -138,15 +138,16 @@
    padding-top: 7px;
 }
 
-.left-flex, .rightFlexBox {
-  flex-shrink: 0;
+.left-flex,
+.rightFlexBox {
+   flex-shrink: 0;
 }
 
 .innerFlexBoxStart iframe {
-  padding-top: 20px;
-  padding-bottom: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
 }
- 
+
 .innerFlexBoxChassi,
 .innerFlexBoxProcessor,
 .innerFlexBoxGPU,
@@ -158,7 +159,7 @@
 .innerFlexBoxPSU,
 .innerFlexBoxOS,
 .innerFlexBoxProvideBuild {
-  display: none;
+   display: none;
 }
 
 .innerFlexBox ul {
@@ -179,7 +180,7 @@
    margin-left: 1rem;
    background-color: #242526;
    color: #e1e1e1;
-   font-weight:600;
+   font-weight: 600;
    border: 0;
 }
 
@@ -195,12 +196,12 @@
    margin-left: 1rem;
    background-color: #242526;
    color: #e1e1e1;
-   font-weight:600;
+   font-weight: 600;
    border: 0;
 }
 
 .monteringsButtonOption:hover {
-   cursor:pointer;
+   cursor: pointer;
    opacity: 0.5;
 }
 
@@ -209,7 +210,8 @@
    opacity: 0.5;
 }
 
-.innerFlexBoxProvideBuild, .innerFlexBoxOS {
+.innerFlexBoxProvideBuild,
+.innerFlexBoxOS {
    position: relative; /*Lägger till detta för att positionera disclaimer absolut inom denna behållare */
    display: flex;
    flex-direction: column; /* Lägger till element i en kolumn */
@@ -222,4 +224,3 @@
    right: 0.4rem; /* Flyttar disclaimern till höger kant */
    bottom: 0.2rem; /* Flyttar disclaimern till botten */
 }
-

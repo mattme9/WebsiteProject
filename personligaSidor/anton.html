@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="/css/index.css" />
+      <link rel="stylesheet" href="/css/header.css" />
+      <link rel="stylesheet" href="/css/footer.css" />
+      <link rel="stylesheet" href="anton.css" />
 
-<head>
-   <meta charset="UTF-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Document</title>
-   <link rel="stylesheet" href="/css/index.css"/>
-   <link rel="stylesheet" href="/css/header.css" />
-   <link rel="stylesheet" href="/css/footer.css" />
-   <link rel="stylesheet" href="anton.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
+         rel="stylesheet"
+      />
+      <script defer src="anton.js"></script>
+      <script defer src="/javascript/script.js"></script>
+   </head>
 
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap"
-      rel="stylesheet" />
-   <script defer src="anton.js"></script>
-   <script defer src="/javascript/script.js"></script>
-</head>
-
-<body>
-   <header>
-      <div class="header-container">
-         <div class="row-top">
-            <nav class="mobile-nav">
+   <body>
+      <header>
+         <div class="header-container">
+            <div class="row-top">
+               <nav class="mobile-nav">
                   <a href="/html/products.html">Våra produkter</a>
                   <a href="/html/buildpc.html">Bygg din egen dator</a>
                   <a href="/html/aboutus.html">Om oss</a>
@@ -29,44 +30,48 @@
                <button class="hamburger">
                   <div class="bar"></div>
                </button>
-            <div class="left-section">
-               <div class="logo-link">
-                  <a href="/html/index.html" class="logo-link">
-                     <img class="computer-logo" src="/resources/logo.png" />
-                     <div class="logo-text">COM|VUE|TER</div>
-                  </a>
+               <div class="left-section">
+                  <div class="logo-link">
+                     <a href="/html/index.html" class="logo-link">
+                        <img class="computer-logo" src="/resources/logo.png" />
+                        <div class="logo-text">COM|VUE|TER</div>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="middle-section">
+                  <div class="search-bar-container">
+                     <div class="search-button">
+                        <button type="submit" class="search-button-icon">
+                           <img src="/resources/search-icon-gray.png" />
+                        </button>
+                     </div>
+                     <input
+                        class="search-bar"
+                        type="search"
+                        placeholder="Sök här"
+                     />
+                  </div>
+               </div>
+               <div class="right-section">
+                  <div class="shopping-cart-icon-container">
+                     <img
+                        class="shopping-cart-icon"
+                        src="/resources/shoppingcart.png"
+                     />
+                     <a href=""> Kundvagn</a>
+                  </div>
                </div>
             </div>
-            
-            <div class="middle-section">
+            <div class="row-bottom">
                <div class="search-bar-container">
                   <div class="search-button">
                      <button type="submit" class="search-button-icon">
-                        <img src="/resources/search-icon-gray.png"/>
+                        <img src="/resources/search-icon-gray.png" />
                      </button>
                   </div>
-                  <input class="search-bar" type="search" placeholder="Sök här" />
+                  <input class="search-bar" type="text" placeholder="Sök här" />
                </div>
-            </div>
-            <div class="right-section">
-               <div class="shopping-cart-icon-container">
-                  <img
-                     class="shopping-cart-icon"
-                     src="/resources/shoppingcart.png"
-                  />
-                  <a href=""> Kundvagn</a>
-               </div>
-            </div>
-         </div>
-         <div class="row-bottom">
-            <div class="search-bar-container">
-               <div class="search-button">
-                  <button type="submit" class="search-button-icon">
-                     <img src="/resources/search-icon-gray.png"/>
-                  </button>
-               </div>
-               <input class="search-bar" type="text" placeholder="Sök här" />
-            </div>
                <div class="top-menu-link">
                   <a href="/html/products.html">Våra produkter</a>
                </div>
@@ -79,169 +84,236 @@
                <div class="top-menu-link">
                   <a href="/html/policy.html">Policy</a>
                </div>
+            </div>
          </div>
-      </div>
-   </header>
-   <main>
-      <div class="companyInfo">
-         <h1>VÄLKOMMEN BITCHES</h1>
-
-         <p>
-            Anton är en passionerad och erfaren datorbyggare som har arbetat på
-            “Com|Vue|Ter” sedan 2021. Han ansvarar för att designa och montera kraftfulla
-            och anpassade datorer för företagets kunder, från gamers till forskare. Anton
-            har en bakgrund inom datavetenskap och elektronik, och han håller sig alltid
-            uppdaterad om de senaste trenderna och teknikerna inom datorbranschen. Han är
-            också en entusiastisk lärare som gärna delar sina kunskaper och tips med sina
-            kollegor och kunder. Anton är en viktig del av "Com|Vue|Ter"s team som strävar
-            efter att leverera högkvalitativa och innovativa lösningar för alla datorbehov.
-         </p>
-      </div>
-      <div class="attributes">
-         <h1>Antons kompetens</h1>
-
-         <p>
-            Anton kan skriva kåd.
-         </p>
-         <div class="circle-container">
-            <svg class="progress-ring" width="120" height="120">
-               <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60"
-                  cy="60" />
-            </svg>
-            <svg class="progress-ring" width="120" height="120">
-               <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60"
-                  cy="60" />
-            </svg>
-            <svg class="progress-ring" width="120" height="120">
-               <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60"
-                  cy="60" />
-            </svg>
-            <svg class="progress-ring" width="120" height="120">
-               <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60"
-                  cy="60" />
-            </svg>
-            <svg class="progress-ring" width="120" height="120">
-               <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60"
-                  cy="60" />
-            </svg>
-            <svg class="progress-ring" width="120" height="120">
-               <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="58" cx="60"
-                  cy="60" />
-            </svg>
-         </div>
-         <div class="attributeNames">
-            <h2 class="attribute1"><a href="#nvidia">PROJEKT 1</a></h2>
-            <h2 class="attribute2"><a href="#amd">PROJEKT 2</a></h2>
-            <h2 class="attribute3"><a href="#mount">PROJEKT 3</a></h2>
-            <h2 class="attribute4"><a href="#troubleshooting">PROJEKT 4</a></h2>
-            <h2 class="attribute5"><a href="#coding">PROJEKT 5</a></h2>
-            <h2 class="attribute6">TREVLIG</h2>
-         </div>
-
-      </div>
-      <div id="nvidia" class="nvidia">
-         <h1 id="title1"></h1>
-         <h2 id="customer1"></h2>
-         <p id="description1"></p>
-      </div>
-
-      <div id="amd" class="amd">
-         <h1 id="title2"></h1>
-         <h2 id="customer2"></h2>
-         <p id="description2"></p>
-      </div>
-      <div id="troubleshooting" class="troubleshooting">
-         <h1 id="title3"></h1>
-         <h2 id="customer3"></h2>
-         <p id="description3"></p>
-      </div>
-      <div id="coding" class="coding">
-         <h1 id="title4"></h1>
-         <h2 id="customer4"></h2>
-         <p id="description4"></p>
-      </div>
-      <div id="item5" class="item5">
-         <h1 id="title5"></h1>
-         <h2 id="customer5"></h2>
-         <p id="description5"></p>
-      </div>
-   </main>
-   <footer>
-      <div class="footer-container">
-         <div class="left-footer">
-            <h2>Policy</h2>
+      </header>
+      <main>
+         <div class="companyInfo">
+            <h1>VÄLKOMMEN</h1>
+            <img src="/resources/employees/anton.png" />
             <p>
-               ComVueTer strävar efter att ge bästa möjliga kundupplevelse.
-               Vi följer strikta riktlinjer för kvalitet och service. Vi
-               respekterar dina rättigheter som kund och skyddar din
-               integritet. 
-            </p>   
-               <a href="/html/policy.html"><span class="left-footer-link"
+               Anton är en passionerad och erfaren datorbyggare som har arbetat
+               på “Com|Vue|Ter” sedan 2021. Han ansvarar för att designa och
+               montera kraftfulla och anpassade datorer för företagets kunder,
+               från gamers till forskare. Anton har en bakgrund inom
+               datavetenskap och elektronik, och han håller sig alltid
+               uppdaterad om de senaste trenderna och teknikerna inom
+               datorbranschen. Han är också en entusiastisk lärare som gärna
+               delar sina kunskaper och tips med sina kollegor och kunder. Anton
+               är en viktig del av "Com|Vue|Ter"s team som strävar efter att
+               leverera högkvalitativa och innovativa lösningar för alla
+               datorbehov.
+            </p>
+         </div>
+         <div class="attributes">
+            <h1>Antons kompetens</h1>
+
+            <p>
+               Anton kan skriva kod, nedan finns kvaliteerna på hans tidigare
+               projekt, där projekt 1 är länst till vänster osv.
+            </p>
+            <div class="circle-container">
+               <svg class="progress-ring" width="120" height="120">
+                  <circle
+                     class="progress-ring__circle"
+                     stroke="white"
+                     stroke-width="4"
+                     fill="transparent"
+                     r="58"
+                     cx="60"
+                     cy="60"
+                  />
+               </svg>
+               <svg class="progress-ring" width="120" height="120">
+                  <circle
+                     class="progress-ring__circle"
+                     stroke="white"
+                     stroke-width="4"
+                     fill="transparent"
+                     r="58"
+                     cx="60"
+                     cy="60"
+                  />
+               </svg>
+               <svg class="progress-ring" width="120" height="120">
+                  <circle
+                     class="progress-ring__circle"
+                     stroke="white"
+                     stroke-width="4"
+                     fill="transparent"
+                     r="58"
+                     cx="60"
+                     cy="60"
+                  />
+               </svg>
+               <svg class="progress-ring" width="120" height="120">
+                  <circle
+                     class="progress-ring__circle"
+                     stroke="white"
+                     stroke-width="4"
+                     fill="transparent"
+                     r="58"
+                     cx="60"
+                     cy="60"
+                  />
+               </svg>
+               <svg class="progress-ring" width="120" height="120">
+                  <circle
+                     class="progress-ring__circle"
+                     stroke="white"
+                     stroke-width="4"
+                     fill="transparent"
+                     r="58"
+                     cx="60"
+                     cy="60"
+                  />
+               </svg>
+               <svg class="progress-ring" width="120" height="120">
+                  <circle
+                     class="progress-ring__circle"
+                     stroke="white"
+                     stroke-width="4"
+                     fill="transparent"
+                     r="58"
+                     cx="60"
+                     cy="60"
+                  />
+               </svg>
+            </div>
+            <div class="attributeNames">
+               <h2 class="attribute1"><a href="#nvidia">PROJEKT 1</a></h2>
+               <h2 class="attribute2"><a href="#amd">PROJEKT 2</a></h2>
+               <h2 class="attribute3"><a href="#mount">PROJEKT 3</a></h2>
+               <h2 class="attribute4">
+                  <a href="#troubleshooting">PROJEKT 4</a>
+               </h2>
+               <h2 class="attribute5"><a href="#coding">PROJEKT 5</a></h2>
+               <h2 class="attribute6">TREVLIG</h2>
+            </div>
+         </div>
+         <div id="nvidia" class="nvidia">
+            <h1 id="title1"></h1>
+            <h2 id="customer1"></h2>
+            <p id="description1"></p>
+         </div>
+
+         <div id="amd" class="amd">
+            <h1 id="title2"></h1>
+            <h2 id="customer2"></h2>
+            <p id="description2"></p>
+         </div>
+         <div id="troubleshooting" class="troubleshooting">
+            <h1 id="title3"></h1>
+            <h2 id="customer3"></h2>
+            <p id="description3"></p>
+         </div>
+         <div id="coding" class="coding">
+            <h1 id="title4"></h1>
+            <h2 id="customer4"></h2>
+            <p id="description4"></p>
+         </div>
+         <div id="item5" class="item5">
+            <h1 id="title5"></h1>
+            <h2 id="customer5"></h2>
+            <p id="description5"></p>
+         </div>
+      </main>
+      <footer>
+         <div class="footer-container">
+            <div class="left-footer">
+               <h2>Policy</h2>
+               <p>
+                  ComVueTer strävar efter att ge bästa möjliga kundupplevelse.
+                  Vi följer strikta riktlinjer för kvalitet och service. Vi
+                  respekterar dina rättigheter som kund och skyddar din
+                  integritet.
+               </p>
+               <a href="/html/policy.html"
+                  ><span class="left-footer-link"
                      >Läs mer om vår policy</span
                   ></a
                >
-            
-         </div>
+            </div>
 
-         <div class="center-footer">
-            <h2>Om oss</h2>
-            <p>
-               ComVueTer är ditt go-to företag för tekniklösningar. Vi
-               erbjuder toppmoderna datorkomponenter och skräddarsydda
-               datorer, från gaming till kontor. <br />
-               Vårt expertteam levererar bästa möjliga kundupplevelse och de
-               senaste produkterna. Vi skapar inte bara datorer, vi
-               förverkligar drömmar. <br />
-            </p>
+            <div class="center-footer">
+               <h2>Om oss</h2>
+               <p>
+                  ComVueTer är ditt go-to företag för tekniklösningar. Vi
+                  erbjuder toppmoderna datorkomponenter och skräddarsydda
+                  datorer, från gaming till kontor. <br />
+                  Vårt expertteam levererar bästa möjliga kundupplevelse och de
+                  senaste produkterna. Vi skapar inte bara datorer, vi
+                  förverkligar drömmar. <br />
+               </p>
                <a href="/html/aboutus.html"
                   ><span class="center-footer-link">Klicka här</span></a
                >
                <span>för mer info om oss</span>
-            
-         </div>
+            </div>
 
-         <div class="right-footer">
-            <h2>Kontakt</h2>
-            <p>
-               Telefon: 123-123123 <br />
-               Email: info@comvueter.com <br />
-               Adress: Proceassorvägen 1337, Örebro <br />
-            </p>
+            <div class="right-footer">
+               <h2>Kontakt</h2>
+               <p>
+                  Telefon: 123-123123 <br />
+                  Email: info@comvueter.com <br />
+                  Adress: Proceassorvägen 1337, Örebro <br />
+               </p>
 
                <a href="#" id="contactForm"><span>Kontakta oss</span></a>
 
                <!-- Popup Formulär -->
-            
 
                <div id="myPopup" class="popup">
                   <div class="popup-content">
-                      <span class="close"></span>
-                      <form id="contactForm">
-                          <label for="name">Namn</label><br />
-                          <input type="text" id="name" name="name" required /><br />
+                     <span class="close"></span>
+                     <form id="contactForm">
+                        <label for="name">Namn</label><br />
+                        <input
+                           type="text"
+                           id="name"
+                           name="name"
+                           required
+                        /><br />
 
-                          <label for="email">Email</label><br />
-                          <input type="text" id="email" name="email" required /><br />
+                        <label for="email">Email</label><br />
+                        <input
+                           type="text"
+                           id="email"
+                           name="email"
+                           required
+                        /><br />
 
-                          <label for="phone">Telefonnummer</label><br />
-                          <input type="text" id="phone" name="phone" required /><br />
+                        <label for="phone">Telefonnummer</label><br />
+                        <input
+                           type="text"
+                           id="phone"
+                           name="phone"
+                           required
+                        /><br />
 
-                          <label for="textQuery">Text:</label> <br />
-                          <textarea id="textQuery" name="textQuery" required></textarea>
-                          <br />
-                          <input type="submit" value="Skicka" class="submitButton" />
-                      </form>
+                        <label for="textQuery">Text:</label> <br />
+                        <textarea
+                           id="textQuery"
+                           name="textQuery"
+                           required
+                        ></textarea>
+                        <br />
+                        <input
+                           type="submit"
+                           value="Skicka"
+                           class="submitButton"
+                        />
+                     </form>
                   </div>
-              </div>
+               </div>
 
-            <div class="socials">
-               <img src="\resources\facebook.png" alt="facebook" />
-               <img src="\resources\instagram.png" alt="instagram" />
-               <img src="\resources\discord.png" alt="discord" />
+               <div class="socials">
+                  <img src="\resources\facebook.png" alt="facebook" />
+                  <img src="\resources\instagram.png" alt="instagram" />
+                  <img src="\resources\discord.png" alt="discord" />
+               </div>
             </div>
          </div>
-      </div>
-   </footer>
-</body>
-
+      </footer>
+   </body>
 </html>

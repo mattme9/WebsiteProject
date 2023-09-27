@@ -1,4 +1,3 @@
-
 .header-container {
    z-index: 99;
    height: 130px;
@@ -222,12 +221,11 @@
 }
 
 @media screen and (max-width: 635px) {
-
    .shopping-cart-icon-container {
       margin-right: 10px;
    }
-  
-   .row-top .search-bar-container{
+
+   .row-top .search-bar-container {
       display: none;
    }
 
@@ -241,7 +239,7 @@
       position: relative;
       flex: 1;
    }
-   
+
    .row-bottom .search-bar {
       flex: 1;
       height: 45px;
@@ -254,42 +252,42 @@
          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
       color: black;
    }
-   
+
    .row-bottom .search-bar::placeholder {
       font-size: 16px;
    }
-   
+
    .row-bottom .search-button {
       position: absolute;
       right: 10px;
       top: 55%;
       transform: translateY(-50%);
    }
-   
+
    .row-bottom .search-button-icon {
       background-color: transparent;
       border: none;
       padding: 0;
       cursor: pointer;
    }
-   
+
    .row-bottom .search-button-icon img {
       width: 30px;
       padding-right: 5px;
    }
-   
+
    .row-bottom .search-button-icon:hover img {
       opacity: 0.7;
    }
 
    .row-top {
-      justify-content: space-between; 
-      align-items: center; 
+      justify-content: space-between;
+      align-items: center;
    }
 
    .top-menu-link {
       display: none;
-   }  
+   }
 
    /* Nedan är kod för vår "hamburger menu" */
 
@@ -306,10 +304,10 @@
       border: none;
    }
 
-   .hamburger .bar, 
-   .hamburger::after, 
+   .hamburger .bar,
+   .hamburger::after,
    .hamburger::before {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
       height: 5px;
@@ -360,5 +358,4 @@
    .mobile-nav a:hover {
       opacity: 0.8;
    }
-
 }

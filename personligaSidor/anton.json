@@ -1,33 +1,32 @@
 [
-    {
-        "pid": 1,
-        "title": "Projekt: OptiGamer Supreme",
-        "customer": "PowerTech Gaming",
-        "description": "Vi skapade den ultimata speldatorn för PowerTech Gaming med toppmodern hårdvara och skräddarsydda kylsystem. Resultatet blev en kraftfull maskin som levererar en otrolig spelupplevelse."
-    },
-    {
-        "pid": 2,
-        "title": "Projekt: ProComp Workstation Upgrade",
-        "customer":"TechPro Solutions",
-        "description": " Vi ledde uppgraderingen av TechPro Solutions arbetsstationer med snabbare processorer, ökad RAM och SSD-lagring. Detta resulterade i dramatiskt förbättrad produktivitet för företagets anställda."
-    },
-    {
-        "pid": 3,
-        "title": "Projekt: EcoTech Green Computing",
-        "customer": "GreenScape Environmental",
-        "description": "I samarbete med GreenScape Environmental utvecklade vi en serie miljövänliga datorer med låg energiförbrukning och återvinningsbara material. Dessa datorer stödjer deras hållbarhetsinitiativ."
-    },
-    {
-        "pid": 4,
-        "title": "Projekt: EduTech Classroom Solutions",
-        "customer": "Kund: FutureLearn Education",
-        "description": "Vi designade skräddarsydda datorlösningar för FutureLearn Educations klassrum, med fokus på användarvänlighet och driftsäkerhet. Resultatet blev en optimal inlärningsmiljö för eleverna."
-    },
-    {
-        "pid": 5,
-        "title": "Projekt: HealthGuard Medical Systems",
-        "customer": "Kund: MediCare Hospitals",
-        "description": "Tillsammans med MediCare Hospitals utvecklade vi specialanpassade datorer för användning inom hälso- och sjukvården. Dessa system är utformade för att uppfylla höga krav på säkerhet och prestanda."
-    }
-    
+   {
+      "pid": 1,
+      "title": "Projekt: OptiGamer Supreme",
+      "customer": "PowerTech Gaming",
+      "description": "Vi skapade den ultimata speldatorn för PowerTech Gaming med toppmodern hårdvara och skräddarsydda kylsystem. Resultatet blev en kraftfull maskin som levererar en otrolig spelupplevelse."
+   },
+   {
+      "pid": 2,
+      "title": "Projekt: ProComp Workstation Upgrade",
+      "customer": "TechPro Solutions",
+      "description": " Vi ledde uppgraderingen av TechPro Solutions arbetsstationer med snabbare processorer, ökad RAM och SSD-lagring. Detta resulterade i dramatiskt förbättrad produktivitet för företagets anställda."
+   },
+   {
+      "pid": 3,
+      "title": "Projekt: EcoTech Green Computing",
+      "customer": "GreenScape Environmental",
+      "description": "I samarbete med GreenScape Environmental utvecklade vi en serie miljövänliga datorer med låg energiförbrukning och återvinningsbara material. Dessa datorer stödjer deras hållbarhetsinitiativ."
+   },
+   {
+      "pid": 4,
+      "title": "Projekt: EduTech Classroom Solutions",
+      "customer": "Kund: FutureLearn Education",
+      "description": "Vi designade skräddarsydda datorlösningar för FutureLearn Educations klassrum, med fokus på användarvänlighet och driftsäkerhet. Resultatet blev en optimal inlärningsmiljö för eleverna."
+   },
+   {
+      "pid": 5,
+      "title": "Projekt: HealthGuard Medical Systems",
+      "customer": "Kund: MediCare Hospitals",
+      "description": "Tillsammans med MediCare Hospitals utvecklade vi specialanpassade datorer för användning inom hälso- och sjukvården. Dessa system är utformade för att uppfylla höga krav på säkerhet och prestanda."
+   }
 ]

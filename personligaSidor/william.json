@@ -1,32 +1,32 @@
 [
-    {
-        "pid": 1,
-        "title": "Optimering av Leverantörsnätverk",
-        "customer": "ComVueTer (Internt projekt)",
-        "description": "Ledde ansträngningar för att optimera vårt leverantörsnätverk genom att utvärdera befintliga leverantörsrelationer, identifiera nya potentiella partners och förhandla fram avtal som minskade kostnader och förbättrade leveranssäkerheten."
-    },
-    {
-        "pid": 2,
-        "title": "Ny Produktlansering",
-        "customer": "Diverse kunder",
-        "description": "Hanterade inköp av komponenter och teknik för en ny serie av högpresterande datorer. Säkerställde att produkterna var konkurrenskraftigt prissatta och uppfyllde höga kvalitetsstandarder."
-    },
-    {
-        "pid": 3,
-        "title": "Lageroptimering",
-        "customer": "ComVueTer (Intern projekt)",
-        "description": "Ansvarade för att balansera lagerbeholdningen av komponenter för att minska onödiga kostnader samtidigt som vi garanterade att vi alltid hade de nödvändiga delarna tillgängliga för att möta kundernas behov och säkerställa leveranser i tid."
-    },
-    {
-        "pid": 4,
-        "title": "Leverantörsdiversifiering",
-        "customer": "ComVueTer (Intern projekt)",
-        "description": "Arbetade på att diversifiera vårt leverantörsnätverk för att minska risken för försörjningsstörningar och bättre utnyttja konkurrenskraftiga priser och tekniska innovationer från olika källor."
-    },
-    {
-        "pid": 5,
-        "title": "Kostnadsminskningsinitiativ",
-        "customer": "ComVueTer (Intern projekt)",
-        "description": "Ledde ett projekt för att identifiera och genomföra kostnadsminskningar genom att omvärdera befintliga inköpsavtal, förhandla om nya priser med leverantörer och optimera logistiken för inköp och lagerhantering."
-    }
+   {
+      "pid": 1,
+      "title": "Optimering av Leverantörsnätverk",
+      "customer": "ComVueTer (Internt projekt)",
+      "description": "Ledde ansträngningar för att optimera vårt leverantörsnätverk genom att utvärdera befintliga leverantörsrelationer, identifiera nya potentiella partners och förhandla fram avtal som minskade kostnader och förbättrade leveranssäkerheten."
+   },
+   {
+      "pid": 2,
+      "title": "Ny Produktlansering",
+      "customer": "Diverse kunder",
+      "description": "Hanterade inköp av komponenter och teknik för en ny serie av högpresterande datorer. Säkerställde att produkterna var konkurrenskraftigt prissatta och uppfyllde höga kvalitetsstandarder."
+   },
+   {
+      "pid": 3,
+      "title": "Lageroptimering",
+      "customer": "ComVueTer (Intern projekt)",
+      "description": "Ansvarade för att balansera lagerbeholdningen av komponenter för att minska onödiga kostnader samtidigt som vi garanterade att vi alltid hade de nödvändiga delarna tillgängliga för att möta kundernas behov och säkerställa leveranser i tid."
+   },
+   {
+      "pid": 4,
+      "title": "Leverantörsdiversifiering",
+      "customer": "ComVueTer (Intern projekt)",
+      "description": "Arbetade på att diversifiera vårt leverantörsnätverk för att minska risken för försörjningsstörningar och bättre utnyttja konkurrenskraftiga priser och tekniska innovationer från olika källor."
+   },
+   {
+      "pid": 5,
+      "title": "Kostnadsminskningsinitiativ",
+      "customer": "ComVueTer (Intern projekt)",
+      "description": "Ledde ett projekt för att identifiera och genomföra kostnadsminskningar genom att omvärdera befintliga inköpsavtal, förhandla om nya priser med leverantörer och optimera logistiken för inköp och lagerhantering."
+   }
 ]

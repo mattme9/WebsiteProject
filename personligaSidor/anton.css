@@ -61,14 +61,14 @@ body {
 }
 
 .attributeNames {
-    display: grid;
-    justify-content: space-around;
+   display: flex;
+   justify-content: space-around;
 }
 
 .attributeNames h2 {
-    min-width: 15%; /* Lägg till en fast bredd här */
-    text-align: center; /* Centrera texten inom h2-elementet */
-    padding-top: 1rem;
+   min-width: 15%; /* Lägg till en fast bredd här */
+   text-align: center; /* Centrera texten inom h2-elementet */
+   padding-top: 1rem;
 }
 
 .progress-ring__circle {
@@ -90,7 +90,7 @@ body {
     border-radius: 4rem;
  }
 
- .amd, .troubleshooting {
+ .amd, .troubleshooting, .item5 {
     border: 2px solid grey;
     margin: 0 auto; /* Centrera horisontellt */
     text-align: center; /* Centrera texten */
@@ -102,13 +102,13 @@ body {
     border-radius: 4rem;
  }
  
- .nvidia h1, .amd h1, .mount h1, .troubleshooting h1, .coding h1 {
+ .nvidia h1, .amd h1, .mount h1, .troubleshooting h1, .coding h1, .item5 h1 {
     padding: 2rem;
     text-decoration: underline;
     text-transform: uppercase;
 }
 
-.nvidia p, .amd p, .mount p, .troubleshooting p, .coding p {
+.nvidia p, .amd p, .mount p, .troubleshooting p, .coding p, .item5 p {
     padding: 2rem;
     line-height: 30px;
 }
@@ -124,7 +124,8 @@ body {
 #amd,
 #mount,
 #troubleshooting,
-#coding {
+#coding,
+#item5 {
     transition: all 0.5s ease;
 }
 
@@ -133,7 +134,8 @@ body {
 #amd:hover,
 #mount:hover,
 #troubleshooting:hover,
-#coding:hover {
+#coding:hover,
+#item5:hover {
     transform: scale(1.1);
 }
 
@@ -163,6 +165,9 @@ body.roll {
       text-align: center;
       padding-top: 1rem;
    }
+   .progress-ring__circle {
+      display: none;
+   }
 }
 
 @media screen and (max-width: 665px) {
@@ -179,5 +184,8 @@ body.roll {
       min-width: auto;
       text-align: center;
       padding-top: 1rem;
+   }
+   .progress-ring__circle {
+      display: none;
    }
 }

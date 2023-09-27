@@ -178,8 +178,11 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding-top: 50px;
+        padding-top: 130px;
         font-size:20px;
+    }
+    .item1{
+        transform: scale(0.95);
     }
 
     .grid-container {
@@ -191,5 +194,7 @@ body {
         transform:scale(0.9);
     }
 }
+
+
 
 

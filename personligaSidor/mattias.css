@@ -3,7 +3,59 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+    background: linear-gradient(to bottom, #242526, #1c364f);
+ }
+
+ .grid-container{
+    display:grid;
+    grid-template-columns: 40em;
+    grid-template-rows: 40em 40em 40em 40em 40em 40em;
+    gap: 50em;
+    background-color: #1c364f;
+ }
+
+ .grid-container > div {
+    background-color: rgb(119, 129, 129);
+    text-align:center;
+    padding: 20px 0;
+    font-size:30px;
+ }
+
+ .aboutme-wrapper{
+    width:fit-content;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    left:48%;
+    top:70%;
+ }
+
+.aboutme-container{
+    width:100%;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    padding: 1em 1em;
+}
+
+.aboutme-container *{
+    color:black;
+    font-weight: 500;
+}
+.aboutinfo{
+    display:block;
+    position:absolute;
+    width:45%;
+}
+
+.aboutinfo p{
+    font-size:0.6em;
+}
+.details{
+    width:100%;
+    display:absolute;
     justify-content: space-between;
     font-size:0.7em;
 }
@@ -68,13 +120,11 @@ body {
     }
 }
 
-.expanding.box{
-    transition: transform 2s ease;
+.expanding-box{
+    overflow:hidden;
+    max-height:0;
+    transition:max-height 0.5s ease-in-out;
     /* Justeringar kan göras här */
-}
-
-.expanding.box.expanded{
-    transform: scale(1.1);
 }
 
 .description{
@@ -91,6 +141,11 @@ body {
 .description p{
     text-align: center;
     font-size:0.8em;
+}
+
+.titleLine{
+    display:block;
+    margin-bottom:1em;
 }
 
 .title{

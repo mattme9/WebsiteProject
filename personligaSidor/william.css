@@ -1,122 +1,26 @@
-:root {
-    --gradient: linear-gradient(
-        45deg,
-        #111772,
-        #493C9F,
-        #7865CE,
-        #A890FE
-    );
+.header-container {
+    border-bottom-width: 0.5px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+.footer-container {
+    border-top-width: 0.5px;
+    border-top-style: solid;
+    border-top-color: white;
+    padding-top: 30px;
 }
 
 body {
-    display: inline-block;
-}
-
-.headline {
-    margin-top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    position: relative;
-    font-size: 70px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: transparent;
-    -webkit-text-stroke: 1px #ededed;
-    text-transform: uppercase;
-}
-
-.headline::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    color: #ededed;
-    -webkit-text-stroke: 0px #ededed;
-    border-right: 2px solid #ededed;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
-}
-
-@keyframes animate {
-    0%, 10%, 100% {
-        width: 0;
-    }
-    70%, 90% {
-        width: 100%;
-    }
-}
-
-h1, h3 {
-    text-align: center;
-    white-space: nowrap;
-}
-
-p {
-    padding: 0 50px;
-    text-align: left;
+    background-color: #0F1440;
 }
 
 .main-content {
-    display: grid;
-    justify-content: center;
-}
-
-section {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 100vh;
-}
-
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
-
-.skillbar-container:nth-child(2){
-    transition-delay: 200ms;
-}
-
-.skillbar-container:nth-child(3){
-    transition-delay: 400ms;
-}
-
-.skillbar-container:nth-child(4){
-    transition-delay: 600ms;
-}
-
-.first-img-container {
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.first-img {
-    width: 700px;
-}
-
-body,
-.header-container,
-.footer-container,
-.mobile-nav {
-    background: var(--gradient)
-}
-
-.all-skillbars {
-    padding: 50px;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 300px;
+    padding-bottom: 100px;
 }
 
 .skillbar-container {
@@ -124,9 +28,10 @@ body,
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-    width: 170px;
+    width: 150px;
     padding: 20px 0;
     background-color: #CEC5FF;
+    row-gap: 20px;
 }
 
 .skillbar-circle {
@@ -134,7 +39,7 @@ body,
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    background-color: #CEC5FF;;
+    background-color: #CEC5FF;
     background: conic-gradient(#8984EF 3.6deg, #ededed 0deg);
     display: flex;
     align-items: center;
@@ -152,101 +57,11 @@ body,
 
 .circle-value {
     position: relative;
-    color: #493C9F;;
+    color: #894E9A;
     font-size: 20px;
 }
 
 .skill-type-text {
-    color: #493C9F;;
+    color: #894E9A;
     font-size: 20px;
 }
-
-.project {
-    width: 80%;
-    padding: 30px 0;
-    margin: 30px 0;
-    border-style: solid;
-    border-width: 0.5;
-    border-radius: 10px;
-}
-
-.project h1, h3 {
-    background: linear-gradient(
-        to right,
-        #ededed 0,
-        #493C9F 10%,
-        #ededed 20%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 4s linear infinite;
-}
-
-@keyframes shine {
-    0%, 10%, 100% {
-        background-position: 0;
-    }
-    50%, 60% {
-        background-position: 750px;
-    }
-}
-
-.customer {
-    margin-bottom: 30px;
-}
-
-.mobile-nav.is-active {
-    height: 100%;
-}
-
-.mobile-nav a {
-    background-color: #493C9F;
-}
-
-@media screen and (max-width: 1000px) {
-    .first-img {
-        width: 550px;
-    }
-}
-
-@media screen and (max-width: 860px) {
-    .all-skillbars {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .main-content {
-        padding: 0 30px;
-    }
-}
-
-@media screen and (max-width: 750px){
-    .first-img {
-        width: 450px;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .all-skillbars {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media screen and (max-width: 500px) {
-    .first-img {
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .headline,
-    .headline::before {
-        font-size: 50px;
-    }
-
-    p {
-        font-size: 20px;
-    }
-}
-
-

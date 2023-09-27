@@ -1,0 +1,28 @@
+[
+    {
+        "pid": 1,
+        "title": "E-handelsplattform för datorförsäljning: TechTrove",
+        "description": "Jag hade privilegiet att vara en del av teamet som skapade TechTrove, en plattform som verkligen förändrade hur datorer såldes online. Genom att fokusera på användarvänlighet och teknisk precision försökte vi skapa något som skulle gynna våra kunder."
+    },
+    {
+        "pid": 2,
+        "title": "Kundsupportportal: HelpByte",
+        "description": "Att vara med och utveckla HelpByte var en fantastisk erfarenhet. Vi strävade efter att förbättra kundupplevelsen och möjliggöra smidigare interaktioner. Att se hur detta påverkade kundtillfredsställelsen var verkligen givande."
+    },
+    {
+        "pid": 3,
+        "title": "Anpassningsverktyget för datorer: CustomComp",
+        "description": "Jag hade förmånen att vara delaktig i skapandet av CustomComp, ett verktyg som gav våra kunder möjlighet att skräddarsy sina datorer. Att kunna erbjuda den här nivån av anpassning var verkligen givande, och jag är tacksam för att få vara en del av det."
+    },
+    {
+        "pid": 4,
+        "title": "Datorrecensionsbloggen: GigaGuru",
+        "description": "Att dela med mig av min entusiasm och insikter inom datorbranschen genom GigaGuru var en passion som jag värdesatte mycket. Jag hoppas att det kunde vara till nytta för teknikentusiaster och potentiella kunder."
+    },
+    {
+        "pid": 5,
+        "title": "Återvinningsprogrammet för gamla datorer: EcoElectro",
+        "description": "Att få vara en del av initiativet att främja återvinning och hållbarhet genom EcoElectro var verkligen meningsfullt. Det känns bra att kunna bidra till både företagets framgång och miljöns välbefinnande."
+    }
+    
+]
